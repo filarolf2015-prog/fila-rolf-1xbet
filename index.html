@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide 1xBet — Fila Rolf, Agent Officiel</title>
+<meta name="description" content="Votre agent officiel 1xBet. Inscription gratuite, dépôt et retrait rapide via Mobile Money. Code promo exclusif DRH26. Disponible 7j/7.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07080F;--bg2:#0E0F1A;--card:#131420;--card2:#191B2A;
+  --gold:#F6A92C;--gold2:#FFD47E;--green:#00C896;--green2:#00F5B4;
+  --red:#FF4D6D;--blue:#4B8EF5;
+  --border:rgba(246,169,44,0.13);--border-g:rgba(0,200,150,0.15);
+  --text:#EEF0FF;--muted:#666888;--muted2:#9496B8;
+  --r:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+html,body{background:#07080F !important;color:#EEF0FF !important;}
+/* Masquer la date et les éléments Blogger automatiques */
+.date-header,.date-outer,.post-timestamp,.published,.post-footer,.blog-pager,.comments,.post-labels,.post-title,.widget-content p,#Attribution1{display:none !important;height:0 !important;overflow:hidden !important;}
+.post-body{margin:0 !important;padding:0 !important;}
+.post-outer,.post,.hentry{padding:0 !important;margin:0 !important;border:none !important;background:transparent !important;}
+body{font-family:'DM Sans',sans-serif;background:#07080F !important;color:#EEF0FF !important;overflow-x:hidden;line-height:1.6;}
+#app-wrapper{background:#07080F;color:#EEF0FF;min-height:100vh;font-family:'DM Sans',sans-serif;position:relative;}
+
+/* BACKGROUND */
+#app-wrapper::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 50% at 90% -10%,rgba(246,169,44,0.08) 0%,transparent 55%),
+    radial-gradient(ellipse 60% 60% at -10% 80%,rgba(0,200,150,0.06) 0%,transparent 55%),
+    repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.015) 40px),
+    repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.015) 40px);
+}
+
+/* ══ HEADER ══ */
+.header{position:sticky;top:0;z-index:200;background:rgba(7,8,15,0.94);backdrop-filter:blur(18px);border-bottom:1px solid rgba(246,169,44,0.13);}
+.header-inner{max-width:960px;margin:0 auto;padding:0 20px;height:56px;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:900;letter-spacing:-0.5px;color:#F6A92C;display:flex;align-items:center;gap:6px;}
+.logo-sub{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:600;color:#9496B8;letter-spacing:2px;text-transform:uppercase;display:block;line-height:1;}
+.nav{display:flex;align-items:center;gap:2px;}
+.nav a{color:#9496B8;text-decoration:none;font-size:0.78rem;font-weight:600;padding:6px 11px;border-radius:8px;transition:all 0.2s;white-space:nowrap;}
+.nav a:hover{color:#F6A92C;background:rgba(246,169,44,0.08);}
+.nav .cta{background:linear-gradient(135deg,#25D366,#1AAB5B);color:#fff !important;padding:7px 14px !important;}
+.nav .cta:hover{opacity:0.9;background:linear-gradient(135deg,#25D366,#1AAB5B) !important;}
+
+/* TICKER */
+.ticker-bar{background:rgba(246,169,44,0.07);border-bottom:1px solid rgba(246,169,44,0.13);overflow:hidden;height:32px;display:flex;align-items:center;}
+.ticker-inner{display:flex;animation:tickScroll 28s linear infinite;white-space:nowrap;width:max-content;gap:0;}
+.ticker-inner:hover{animation-play-state:paused;}
+.tick-item{padding:0 28px;font-size:0.72rem;font-weight:600;color:#FFD47E;display:flex;align-items:center;gap:7px;}
+.tick-dot{width:5px;height:5px;background:#00C896;border-radius:50%;flex-shrink:0;}
+@keyframes tickScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ══ HERO ══ */
+.hero{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:52px 20px 44px;display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(0,200,150,0.1);border:1px solid rgba(0,200,150,0.22);color:#00C896;padding:5px 14px;border-radius:50px;font-size:0.7rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:16px;}
+.live-dot{width:6px;height:6px;border-radius:50%;background:#00C896;animation:blink 1.2s ease infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(2.4rem,5vw,3.8rem);font-weight:900;line-height:1.0;letter-spacing:-1.5px;margin-bottom:14px;}
+.hero h1 em{color:#F6A92C;font-style:italic;}
+.hero h1 span{color:#00C896;}
+.hero-desc{font-size:0.95rem;color:#9496B8;line-height:1.75;margin-bottom:24px;max-width:420px;}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+.btn-wa{background:linear-gradient(135deg,#25D366,#1AAB5B);color:#fff;padding:12px 22px;border-radius:11px;text-decoration:none;font-weight:700;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;transition:all 0.22s;box-shadow:0 4px 18px rgba(37,211,102,0.22);}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(37,211,102,0.32);}
+.btn-gold{background:linear-gradient(135deg,#F6A92C,#E8950F);color:#000;padding:12px 22px;border-radius:11px;text-decoration:none;font-weight:700;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;transition:all 0.22s;}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(246,169,44,0.3);}
+.hero-stats{display:flex;gap:20px;flex-wrap:wrap;}
+.hstat{text-align:center;}
+.hstat-val{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:900;color:#F6A92C;display:block;letter-spacing:-0.5px;}
+.hstat-lbl{font-size:0.68rem;color:#666888;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;}
+
+/* AGENT CARD */
+.agent-card{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:20px;padding:24px;text-align:center;}
+.agent-avatar{width:88px;height:88px;border-radius:50%;margin:0 auto 14px;overflow:hidden;border:3px solid #F6A92C;box-shadow:0 0 0 6px rgba(246,169,44,0.1);}
+.agent-avatar img{width:100%;height:100%;object-fit:cover;}
+.agent-name{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:900;margin-bottom:4px;}
+.agent-badge{display:inline-flex;align-items:center;gap:5px;background:rgba(0,200,150,0.1);border:1px solid rgba(0,200,150,0.2);color:#00C896;font-size:0.68rem;font-weight:700;padding:3px 10px;border-radius:50px;letter-spacing:0.8px;margin-bottom:14px;}
+.promo-box{background:#191B2A;border:1px solid rgba(246,169,44,0.2);border-radius:11px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.promo-label{font-size:0.65rem;font-weight:700;color:#666888;letter-spacing:1px;text-transform:uppercase;margin-bottom:2px;}
+.promo-code{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:900;color:#F6A92C;letter-spacing:3px;}
+.btn-copy-sm{background:#F6A92C;color:#000;border:none;padding:6px 12px;border-radius:8px;font-size:0.72rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;}
+.btn-copy-sm:hover{background:#FFD47E;}
+.agent-card-btns{display:flex;gap:8px;}
+.agent-card-btns a{flex:1;text-align:center;padding:10px 8px;border-radius:10px;text-decoration:none;font-size:0.78rem;font-weight:700;transition:all 0.2s;}
+.acb-wa{background:linear-gradient(135deg,#25D366,#1AAB5B);color:#fff;}
+.acb-wa:hover{opacity:0.9;}
+.acb-reg{background:#F6A92C;color:#000;}
+.acb-reg:hover{background:#FFD47E;}
+
+/* ══ SECTION ══ */
+.section{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:56px 20px;}
+.full-section{position:relative;z-index:1;padding:56px 20px;background:#0E0F1A;border-top:1px solid rgba(246,169,44,0.13);border-bottom:1px solid rgba(246,169,44,0.13);}
+.full-inner{max-width:960px;margin:0 auto;}
+.s-tag{font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#F6A92C;margin-bottom:7px;}
+.s-tag.g{color:#00C896;}
+.s-title{font-family:'Fraunces',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;letter-spacing:-0.8px;line-height:1.1;margin-bottom:6px;}
+.s-sub{font-size:0.88rem;color:#9496B8;line-height:1.7;margin-bottom:32px;max-width:540px;}
+
+/* ══ GUIDE CARDS ══ */
+.guide-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;}
+.guide-card{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:14px;padding:22px 18px;text-decoration:none;color:#EEF0FF;transition:all 0.22s;display:block;cursor:pointer;}
+.guide-card:hover{border-color:rgba(246,169,44,0.35);transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,0.25);}
+.gc-emoji{font-size:1.9rem;margin-bottom:11px;}
+.gc-title{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700;margin-bottom:5px;}
+.gc-desc{font-size:0.78rem;color:#9496B8;line-height:1.55;margin-bottom:10px;}
+.gc-link{font-size:0.72rem;color:#F6A92C;font-weight:700;}
+
+/* ══ PAGE PANELS ══ */
+.page-panel{display:none;position:relative;z-index:1;}
+.page-panel.active{display:block;}
+.page-hero{background:linear-gradient(135deg,rgba(246,169,44,0.08),rgba(0,200,150,0.04));border-bottom:1px solid rgba(246,169,44,0.13);padding:40px 20px;}
+.page-hero-inner{max-width:960px;margin:0 auto;}
+.page-back{display:inline-flex;align-items:center;gap:6px;color:#9496B8;text-decoration:none;font-size:0.8rem;font-weight:600;margin-bottom:18px;transition:color 0.2s;cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif;}
+.page-back:hover{color:#F6A92C;}
+.page-title{font-family:'Fraunces',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:900;letter-spacing:-1px;line-height:1.05;margin-bottom:10px;}
+.page-title em{color:#F6A92C;font-style:italic;}
+.page-desc{font-size:0.92rem;color:#9496B8;line-height:1.7;max-width:520px;margin-bottom:22px;}
+.page-stats{display:flex;gap:14px;flex-wrap:wrap;}
+.pstat{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:10px;padding:10px 18px;text-align:center;}
+.pstat-val{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;color:#F6A92C;display:block;}
+.pstat-lbl{font-size:0.65rem;color:#666888;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;}
+
+/* ══ STEPS ══ */
+.steps{display:flex;flex-direction:column;gap:0;margin-bottom:32px;}
+.step{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:14px;padding:18px 20px;display:flex;gap:16px;align-items:flex-start;margin-bottom:10px;position:relative;}
+.step::before{content:'';position:absolute;left:34px;bottom:-10px;width:2px;height:10px;background:rgba(246,169,44,0.13);}
+.step:last-child::before{display:none;}
+.step-n{width:32px;height:32px;background:linear-gradient(135deg,#F6A92C,#E8950F);color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:0.82rem;flex-shrink:0;font-family:'Fraunces',serif;}
+.step-body-text{}
+.step-label{font-weight:700;font-size:0.92rem;margin-bottom:3px;}
+.step-detail{font-size:0.8rem;color:#9496B8;line-height:1.6;}
+.step-code{display:inline-flex;align-items:center;gap:8px;background:rgba(246,169,44,0.1);border:1px solid rgba(246,169,44,0.2);border-radius:8px;padding:6px 12px;margin-top:6px;}
+.step-code span{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:900;color:#F6A92C;letter-spacing:2px;}
+
+/* MÉTHODES TABS */
+.method-tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
+.m-tab{background:#131420;border:1px solid rgba(246,169,44,0.13);color:#9496B8;padding:9px 18px;border-radius:9px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
+.m-tab.active{background:rgba(246,169,44,0.12);border-color:#F6A92C;color:#F6A92C;}
+.method-pane{display:none;}
+.method-pane.active{display:block;}
+
+/* ══ FORMULAIRE COMMANDE WHATSAPP ══ */
+.order-form{background:linear-gradient(135deg,rgba(0,200,150,0.07),rgba(0,200,150,0.02));border:1.5px solid rgba(0,200,150,0.22);border-radius:18px;padding:28px;margin-top:32px;}
+.of-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+.of-icon{font-size:1.5rem;}
+.of-title{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:900;}
+.of-title span{color:#00C896;}
+.of-sub{font-size:0.82rem;color:#9496B8;margin-bottom:22px;line-height:1.6;}
+.of-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.of-field{display:flex;flex-direction:column;gap:5px;}
+.of-field.full{grid-column:1/-1;}
+.of-label{font-size:0.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9496B8;}
+.of-input{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:9px;padding:11px 14px;color:#EEF0FF;font-size:0.88rem;font-family:'DM Sans',sans-serif;outline:none;transition:border-color 0.2s;width:100%;}
+.of-input:focus{border-color:#00C896;}
+.of-input::placeholder{color:#666888;}
+.of-select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666888' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;}
+.of-input option{background:#0E0F1A;}
+.btn-send-wa{width:100%;background:linear-gradient(135deg,#25D366,#1AAB5B);color:#fff;border:none;padding:14px;border-radius:11px;font-weight:700;font-size:0.95rem;cursor:pointer;font-family:'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;gap:9px;transition:all 0.22s;margin-top:6px;}
+.btn-send-wa:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,0.3);}
+.of-note{font-size:0.73rem;color:#666888;text-align:center;margin-top:10px;line-height:1.5;}
+.of-success{display:none;background:rgba(0,200,150,0.1);border:1px solid rgba(0,200,150,0.25);border-radius:11px;padding:14px;text-align:center;margin-top:12px;}
+.of-success-icon{font-size:1.8rem;margin-bottom:6px;}
+.of-success-text{font-size:0.85rem;color:#00C896;font-weight:600;}
+
+/* ══ COMMENTAIRES CLIENTS ══ */
+.comments-section{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:56px 20px;}
+.comments-ticker-wrap{overflow:hidden;position:relative;margin-bottom:14px;}
+.comments-ticker-wrap::before,.comments-ticker-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;}
+.comments-ticker-wrap::before{left:0;background:linear-gradient(90deg,#07080F,transparent);}
+.comments-ticker-wrap::after{right:0;background:linear-gradient(-90deg,#07080F,transparent);}
+.comments-ticker{display:flex;gap:14px;animation:ctick 40s linear infinite;width:max-content;}
+.comments-ticker:hover{animation-play-state:paused;}
+.comments-ticker.r{animation-direction:reverse;animation-duration:46s;}
+@keyframes ctick{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+.comment-card{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:16px;padding:20px;width:290px;flex-shrink:0;transition:all 0.22s;}
+.comment-card:hover{border-color:rgba(246,169,44,0.3);transform:translateY(-2px);}
+.cc-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.cc-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:900;font-size:1rem;color:#000;flex-shrink:0;}
+.av-gold{background:linear-gradient(135deg,#F6A92C,#E8950F);}
+.av-green{background:linear-gradient(135deg,#00C896,#009B72);}
+.av-blue{background:linear-gradient(135deg,#4B8EF5,#2B6ED4);}
+.cc-info{}
+.cc-name{font-weight:700;font-size:0.88rem;margin-bottom:1px;}
+.cc-country{font-size:0.7rem;color:#9496B8;}
+.cc-stars{color:#F6A92C;font-size:0.78rem;letter-spacing:1px;margin-bottom:8px;}
+.cc-text{font-size:0.8rem;color:#9496B8;line-height:1.65;font-style:italic;margin-bottom:10px;}
+.cc-gain{display:inline-flex;align-items:center;gap:5px;background:rgba(0,200,150,0.1);border:1px solid rgba(0,200,150,0.2);color:#00C896;font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:50px;}
+.cc-verified{display:inline-flex;align-items:center;gap:4px;font-size:0.68rem;color:#666888;margin-left:7px;}
+.cc-date{font-size:0.65rem;color:#666888;margin-top:6px;}
+
+/* RÉSUMÉ ÉTOILES */
+.rating-summary{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:16px;padding:22px;display:flex;gap:24px;align-items:center;margin-bottom:28px;flex-wrap:wrap;}
+.rs-big{text-align:center;}
+.rs-score{font-family:'Fraunces',serif;font-size:3.2rem;font-weight:900;color:#F6A92C;line-height:1;}
+.rs-stars{color:#F6A92C;font-size:1rem;letter-spacing:2px;}
+.rs-count{font-size:0.72rem;color:#9496B8;margin-top:4px;}
+.rs-bars{flex:1;min-width:180px;}
+.rs-bar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+.rs-bar-label{font-size:0.72rem;color:#9496B8;width:20px;text-align:right;flex-shrink:0;}
+.rs-bar-track{flex:1;height:6px;background:rgba(255,255,255,0.07);border-radius:3px;overflow:hidden;}
+.rs-bar-fill{height:100%;background:linear-gradient(90deg,#F6A92C,#E8950F);border-radius:3px;transition:width 1s ease;}
+.rs-bar-pct{font-size:0.68rem;color:#666888;width:30px;flex-shrink:0;}
+
+/* ══ GARANTIES ══ */
+.garantie-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;}
+.garantie-card{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:14px;padding:20px;transition:all 0.22s;}
+.garantie-card:hover{border-color:rgba(0,200,150,0.3);transform:translateY(-2px);}
+.gico{font-size:1.8rem;margin-bottom:10px;}
+.gtitle{font-family:'Fraunces',serif;font-size:0.95rem;font-weight:700;margin-bottom:5px;}
+.gdesc{font-size:0.76rem;color:#9496B8;line-height:1.6;}
+.gbadge{display:inline-block;margin-top:8px;font-size:0.64rem;font-weight:700;padding:2px 8px;border-radius:4px;}
+.gbadge-g{background:rgba(0,200,150,0.12);color:#00C896;}
+.gbadge-gold{background:rgba(246,169,44,0.12);color:#F6A92C;}
+
+/* ══ SPORTS ══ */
+.sports-grid{display:flex;flex-wrap:wrap;gap:8px;}
+.sport-chip{background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:9px;padding:8px 14px;font-size:0.8rem;font-weight:600;transition:all 0.2s;cursor:default;}
+.sport-chip:hover{border-color:rgba(246,169,44,0.3);color:#F6A92C;}
+
+/* ══ BONUS CARD ══ */
+.bonus-card{background:linear-gradient(135deg,rgba(246,169,44,0.1),rgba(246,169,44,0.03));border:1px solid rgba(246,169,44,0.25);border-radius:16px;padding:24px;margin-bottom:14px;}
+.bc-top{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.bc-icon{font-size:2rem;}
+.bc-title{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:900;}
+.bc-desc{font-size:0.82rem;color:#9496B8;line-height:1.65;}
+
+/* ══ ADMIN ══ */
+.admin-fab{position:fixed;bottom:20px;left:20px;z-index:300;width:44px;height:44px;background:#191B2A;border:1px solid rgba(246,169,44,0.13);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;transition:all 0.2s;box-shadow:0 4px 14px rgba(0,0,0,0.3);}
+.admin-fab:hover{border-color:#F6A92C;}
+.overlay{display:none;position:fixed;inset:0;z-index:400;background:rgba(0,0,0,0.82);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:20px;}
+.overlay.open{display:flex;}
+.modal{background:#0E0F1A;border:1px solid rgba(246,169,44,0.13);border-radius:20px;padding:28px;max-width:460px;width:100%;max-height:88vh;overflow-y:auto;animation:mIn 0.28s ease;position:relative;}
+@keyframes mIn{from{opacity:0;transform:scale(0.95) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.mclose{position:absolute;top:14px;right:14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#EEF0FF;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.85rem;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
+.mclose:hover{background:rgba(255,255,255,0.12);}
+.mtitle{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;margin-bottom:3px;}
+.mtitle span{color:#F6A92C;}
+.msub{font-size:0.78rem;color:#9496B8;margin-bottom:18px;}
+.m-tabs2{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;}
+.m-tab2{background:#131420;border:1px solid rgba(246,169,44,0.13);color:#9496B8;padding:7px 13px;border-radius:8px;font-size:0.75rem;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
+.m-tab2.active{background:rgba(246,169,44,0.12);border-color:#F6A92C;color:#F6A92C;}
+.mp{display:none;}
+.mp.active{display:block;}
+.mfield{margin-bottom:12px;}
+.mfield label{display:block;font-size:0.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9496B8;margin-bottom:5px;}
+.mfield input,.mfield textarea,.mfield select{width:100%;background:#131420;border:1px solid rgba(246,169,44,0.13);border-radius:8px;padding:10px 13px;color:#EEF0FF;font-size:0.85rem;font-family:'DM Sans',sans-serif;outline:none;transition:border-color 0.2s;}
+.mfield input:focus,.mfield textarea:focus,.mfield select:focus{border-color:#F6A92C;}
+.mfield textarea{resize:vertical;min-height:62px;}
+.mfield select option{background:#0E0F1A;}
+.msave{width:100%;background:linear-gradient(135deg,#F6A92C,#E8950F);color:#000;border:none;padding:12px;border-radius:9px;font-weight:700;font-size:0.9rem;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:4px;transition:all 0.2s;}
+.msave:hover{transform:translateY(-1px);}
+#pw-err{color:#FF4D6D;font-size:0.72rem;margin-top:4px;display:none;}
+
+/* TOAST */
+.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-60px);z-index:500;background:#00C896;color:#000;padding:10px 22px;border-radius:10px;font-weight:700;font-size:0.83rem;transition:all 0.3s;pointer-events:none;white-space:nowrap;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+
+/* FLOATING WA */
+.fab-wa{position:fixed;bottom:20px;right:20px;z-index:300;background:linear-gradient(135deg,#25D366,#1AAB5B);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:all 0.25s;}
+.fab-wa:hover{transform:scale(1.1);}
+
+/* FOOTER */
+footer{position:relative;z-index:1;background:#0E0F1A;border-top:1px solid rgba(246,169,44,0.13);padding:28px 20px;text-align:center;}
+.fl{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:900;color:#F6A92C;margin-bottom:5px;}
+.fd{font-size:0.73rem;color:#9496B8;line-height:1.6;}
+
+/* BTN TEL */
+.btn-tel{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);color:#EEF0FF;padding:12px 22px;border-radius:11px;text-decoration:none;font-weight:700;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;transition:all 0.22s;}
+.btn-tel:hover{background:rgba(255,255,255,0.12);transform:translateY(-2px);}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;padding:28px 16px 32px;gap:28px;}
+  .agent-card{max-width:100%;}
+  .nav a:not(.cta){display:none;}
+  .of-grid{grid-template-columns:1fr;}
+  .page-stats{gap:8px;flex-wrap:wrap;}
+  .header-inner{padding:0 14px;}
+  .section{padding:36px 16px;}
+  .full-section{padding:36px 16px;}
+  .page-hero{padding:28px 16px;}
+  .hero-btns{flex-direction:column;align-items:flex-start;gap:8px;}
+  .hero-btns a{width:100%;justify-content:center;}
+  .btn-tel{width:100%;justify-content:center;}
+  .hero-stats{gap:12px;justify-content:space-between;}
+  .hstat-val{font-size:1.3rem;}
+  .agent-card-btns a{font-size:0.75rem;padding:9px 6px;}
+  .promo-code{font-size:1.2rem;}
+  .guide-grid{grid-template-columns:1fr 1fr;}
+  .steps .step{padding:14px 14px;gap:10px;}
+  .s-title{font-size:1.4rem;}
+  .page-title{font-size:1.8rem;}
+  .rating-summary{flex-direction:column;gap:14px;}
+  .comments-ticker-wrap::before,.comments-ticker-wrap::after{width:30px;}
+  .comment-card{width:240px;padding:14px;}
+  .garantie-grid{grid-template-columns:1fr 1fr;}
+  .order-form{padding:18px;}
+  .agent-btns-big{flex-direction:column;}
+  .footer-inner{flex-direction:column;gap:14px;}
+  .modal{padding:20px 16px;}
+  .sports-grid{gap:6px;}
+  .sport-chip{font-size:0.74rem;padding:6px 10px;}
+  .cta-btns{flex-direction:column;align-items:center;}
+}
+@media(max-width:400px){
+  .hero h1{font-size:1.9rem;}
+  .guide-grid{grid-template-columns:1fr;}
+  .garantie-grid{grid-template-columns:1fr;}
+  .page-stats{gap:6px;}
+  .pstat{padding:8px 12px;}
+  .pstat-val{font-size:1.1rem;}
+  .logo span:first-child{font-size:1.05rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="app-wrapper">
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div style="display:flex;flex-direction:column;line-height:1.1;">
+        <span style="font-family:'Fraunces',serif;font-weight:900;font-size:1.25rem;letter-spacing:-0.5px;color:#F6A92C;">1xBet <span style="color:#EEF0FF;font-size:1rem;">Guide</span></span>
+        <span style="font-family:'DM Sans',sans-serif;font-size:0.58rem;font-weight:700;color:#666888;letter-spacing:2.5px;text-transform:uppercase;">Agent Officiel — Fila Rolf</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#" onclick="showPage('home')">🏠 Accueil</a>
+      <a href="#" onclick="showPage('inscription')">📝 Inscription</a>
+      <a href="#" onclick="showPage('depot')">💳 Dépôt</a>
+      <a href="#" onclick="showPage('retrait')">💰 Retrait</a>
+      <a href="#" onclick="showPage('bonus')">🎁 Bonus</a>
+      <a id="nav-wa" class="cta" href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26">💬 WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner" id="ticker-inner">
+    <!-- JS -->
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE ACCUEIL
+══════════════════════════════════════ -->
+<div id="page-home" class="page-panel active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="hero-badge"><div class="live-dot"></div>Agent officiel disponible</div>
+      <h1>Pariez, Gagnez &<br><em>Retirez</em> avec<br><span>1xBet</span></h1>
+      <p class="hero-desc">Votre agent officiel vous accompagne à chaque étape — inscription, recharge et retrait de vos gains. Simple, rapide et sécurisé.</p>
+      <div class="hero-btns">
+        <a href="https://1xbet.com/fr" target="_blank" class="btn-gold">➡️ S'inscrire sur 1xBet</a>
+        <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" id="hero-wa" class="btn-wa">💬 WhatsApp Agent</a>
+      <a href="tel:+79108754783" class="btn-tel">📞 Appeler</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><span class="hstat-val" id="h-clients">247</span><span class="hstat-lbl">Clients actifs</span></div>
+        <div class="hstat"><span class="hstat-val">5 min</span><span class="hstat-lbl">Délai retrait</span></div>
+        <div class="hstat"><span class="hstat-val">7j/7</span><span class="hstat-lbl">Disponibilité</span></div>
+        <div class="hstat"><span class="hstat-val">0%</span><span class="hstat-lbl">Commission</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="agent-card">
+        <div class="agent-avatar">
+          <img id="agent-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhoLvFgIdjHBbRzl5onlMlRSrJDHVfqweBtk7oeqvQsmb3rw3UhWbU54Tx6cJOfJUISUx0t_YKtXnzuGcejZ15hIxoJ92IUaI4IvAQVJB74yKoaMyE1s0FHHqtpj1fivAHYR3lOaohN6yqPvlTvfD_6Pog6HaaRAGAzVKeKU9_MWnW7tSRYdUEzjAyR5WAJ" alt="Fila Rolf">
+        </div>
+        <div class="agent-name" id="agent-name-display">Fila Rolf</div>
+        <div class="agent-badge">✔ AGENT OFFICIEL 1xBET VÉRIFIÉ</div>
+        <div class="promo-box">
+          <div>
+            <div class="promo-label">Code promo exclusif</div>
+            <div class="promo-code" id="promo-display">DRH26</div>
+          </div>
+          <button class="btn-copy-sm" onclick="copyPromo()">📋 Copier</button>
+        </div>
+        <div class="agent-card-btns">
+          <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" id="agent-wa-btn" class="acb-wa">💬 WhatsApp</a>
+          <a href="https://1xbet.com/fr" target="_blank" class="acb-reg">➡️ S'inscrire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDES -->
+  <div class="full-section">
+    <div class="full-inner">
+      <div class="s-tag">📋 NOS GUIDES</div>
+      <div class="s-title">Tout ce dont vous avez besoin</div>
+      <div class="s-sub">Guides complets pour débuter sur 1xBet et profiter de tous les avantages de votre agent officiel.</div>
+      <div class="guide-grid">
+        <div class="guide-card" onclick="showPage('inscription')">
+          <div class="gc-emoji">📝</div>
+          <div class="gc-title">Inscription</div>
+          <div class="gc-desc">Créez votre compte 1xBet en 5 minutes avec le code promo exclusif de l'agent.</div>
+          <div class="gc-link">Guide étape par étape →</div>
+        </div>
+        <div class="guide-card" onclick="showPage('depot')">
+          <div class="gc-emoji">💳</div>
+          <div class="gc-title">Dépôt</div>
+          <div class="gc-desc">Rechargez votre compte via l'agent. Instantané, sans frais cachés.</div>
+          <div class="gc-link">Guide dépôt →</div>
+        </div>
+        <div class="guide-card" onclick="showPage('retrait')">
+          <div class="gc-emoji">💰</div>
+          <div class="gc-title">Retrait</div>
+          <div class="gc-desc">Retirez vos gains directement sur votre Mobile Money en moins de 5 minutes.</div>
+          <div class="gc-link">Guide retrait →</div>
+        </div>
+        <div class="guide-card" onclick="showPage('bonus')">
+          <div class="gc-emoji">🎁</div>
+          <div class="gc-title">Bonus</div>
+          <div class="gc-desc">Activez votre bonus de bienvenue avec le code promo exclusif de l'agent.</div>
+          <div class="gc-link">Bonus et promos →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPORTS -->
+  <section class="section">
+    <div class="s-tag">⚽ SPORTS DISPONIBLES</div>
+    <div class="s-title">Plus de 50 sports sur 1xBet</div>
+    <div class="s-sub" style="margin-bottom:20px;">Pariez sur tous vos sports préférés avec des centaines de marchés disponibles.</div>
+    <div class="sports-grid">
+      <div class="sport-chip">⚽ Football</div><div class="sport-chip">🏀 Basketball</div>
+      <div class="sport-chip">🎾 Tennis</div><div class="sport-chip">🥊 Boxe</div>
+      <div class="sport-chip">🏈 Rugby</div><div class="sport-chip">🎱 Snooker</div>
+      <div class="sport-chip">🏋️ MMA</div><div class="sport-chip">🎮 eSports</div>
+      <div class="sport-chip">🏇 Courses</div><div class="sport-chip">🏒 Hockey</div>
+      <div class="sport-chip">🏐 Volleyball</div><div class="sport-chip">🏊 Natation</div>
+      <div class="sport-chip">🎯 Fléchettes</div><div class="sport-chip">+ 40 autres</div>
+    </div>
+  </section>
+
+  <!-- COMMENTAIRES CLIENTS -->
+  <div class="full-section" id="commentaires">
+    <div class="full-inner">
+      <div class="s-tag g">💬 AVIS CLIENTS</div>
+      <div class="s-title">Ce que disent nos clients</div>
+      <div class="s-sub">Avis vérifiés de clients qui ont utilisé le service de l'agent.</div>
+
+      <!-- RÉSUMÉ ÉTOILES -->
+      <div class="rating-summary">
+        <div class="rs-big">
+          <div class="rs-score">4.9</div>
+          <div class="rs-stars">★★★★★</div>
+          <div class="rs-count" id="rs-count">sur 247 avis</div>
+        </div>
+        <div class="rs-bars">
+          <div class="rs-bar-row"><span class="rs-bar-label">5★</span><div class="rs-bar-track"><div class="rs-bar-fill" style="width:91%"></div></div><span class="rs-bar-pct">91%</span></div>
+          <div class="rs-bar-row"><span class="rs-bar-label">4★</span><div class="rs-bar-track"><div class="rs-bar-fill" style="width:7%"></div></div><span class="rs-bar-pct">7%</span></div>
+          <div class="rs-bar-row"><span class="rs-bar-label">3★</span><div class="rs-bar-track"><div class="rs-bar-fill" style="width:2%"></div></div><span class="rs-bar-pct">2%</span></div>
+          <div class="rs-bar-row"><span class="rs-bar-label">2★</span><div class="rs-bar-track"><div class="rs-bar-fill" style="width:0%"></div></div><span class="rs-bar-pct">0%</span></div>
+          <div class="rs-bar-row"><span class="rs-bar-label">1★</span><div class="rs-bar-track"><div class="rs-bar-fill" style="width:0%"></div></div><span class="rs-bar-pct">0%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TICKERS COMMENTAIRES -->
+  <div style="position:relative;z-index:1;padding:0 0 14px;">
+    <div class="comments-ticker-wrap" style="margin-bottom:14px;">
+      <div class="comments-ticker" id="cticker1"></div>
+    </div>
+    <div class="comments-ticker-wrap">
+      <div class="comments-ticker r" id="cticker2"></div>
+    </div>
+  </div>
+
+  <!-- GARANTIES -->
+  <section class="section">
+    <div class="s-tag">🛡️ NOS GARANTIES</div>
+    <div class="s-title">Ce que l'agent vous promet</div>
+    <div class="s-sub" style="margin-bottom:24px;">Des engagements concrets, pas des promesses vagues.</div>
+    <div class="garantie-grid">
+      <div class="garantie-card"><div class="gico">⚡</div><div class="gtitle">Retrait en 5 minutes</div><div class="gdesc">Chaque retrait est traité en moins de 5 minutes après votre demande WhatsApp.</div><div class="gbadge gbadge-g">Garanti</div></div>
+      <div class="garantie-card"><div class="gico">📱</div><div class="gtitle">Mobile Money local</div><div class="gdesc">Orange Money, MTN, Moov, Wave — la méthode que vous utilisez déjà.</div><div class="gbadge gbadge-gold">0% frais cachés</div></div>
+      <div class="garantie-card"><div class="gico">🔒</div><div class="gtitle">Votre argent sécurisé</div><div class="gdesc">Votre solde est sur votre compte 1xBet. L'agent ne peut pas y accéder sans vous.</div><div class="gbadge gbadge-g">100% sécurisé</div></div>
+      <div class="garantie-card"><div class="gico">🤝</div><div class="gtitle">Agent humain</div><div class="gdesc">Vous parlez à une vraie personne. Votre agent connaît votre dossier et votre nom.</div><div class="gbadge gbadge-gold">Service personnalisé</div></div>
+      <div class="garantie-card"><div class="gico">🧾</div><div class="gtitle">Confirmation écrite</div><div class="gdesc">Chaque dépôt et retrait est confirmé par message WhatsApp avec l'heure et le montant.</div><div class="gbadge gbadge-g">Traçabilité totale</div></div>
+      <div class="garantie-card"><div class="gico">📞</div><div class="gtitle">Disponible 7j/7</div><div class="gdesc">L'agent répond 7 jours sur 7, même le soir avant un grand match.</div><div class="gbadge gbadge-gold">Réponse &lt; 2 min</div></div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="full-section">
+    <div class="full-inner" style="text-align:center;">
+      <div class="s-tag" style="text-align:center;">🚀 PRÊT À COMMENCER ?</div>
+      <div class="s-title" style="text-align:center;max-width:500px;margin:0 auto 10px;">Rejoignez 1xBet avec votre agent officiel</div>
+      <p style="font-size:0.9rem;color:#9496B8;margin-bottom:26px;line-height:1.7;">Code promo exclusif pour votre bonus de bienvenue.<br>Inscription gratuite — retrait garanti en 5 minutes.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://1xbet.com/fr" target="_blank" class="btn-gold" style="font-size:1rem;padding:14px 28px;">➡️ S'inscrire sur 1xBet</a>
+        <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" id="cta-wa" class="btn-wa" style="font-size:1rem;padding:14px 28px;">💬 Contacter l'agent</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-home -->
+
+
+<!-- ══════════════════════════════════════
+     PAGE INSCRIPTION
+══════════════════════════════════════ -->
+<div id="page-inscription" class="page-panel">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button class="page-back" onclick="showPage('home')">← Retour à l'accueil</button>
+      <div class="s-tag">📝 INSCRIPTION</div>
+      <div class="page-title">Créer votre compte 1xBet<br><em>en 5 minutes</em></div>
+      <p class="page-desc">Créez votre compte officiel 1xBet en moins de 5 minutes. Découvrez les 3 méthodes et activez votre bonus de bienvenue avec le code promo exclusif.</p>
+      <div class="page-stats">
+        <div class="pstat"><span class="pstat-val">5 min</span><span class="pstat-lbl">Durée</span></div>
+        <div class="pstat"><span class="pstat-val">3</span><span class="pstat-lbl">Méthodes</span></div>
+        <div class="pstat"><span class="pstat-val">🎁</span><span class="pstat-lbl">Bonus</span></div>
+        <div class="pstat"><span class="pstat-val">100%</span><span class="pstat-lbl">Officiel</span></div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="method-tabs">
+      <button class="m-tab active" onclick="mTab('insc','tel',this)">📱 Par téléphone</button>
+      <button class="m-tab" onclick="mTab('insc','email',this)">📧 Par e-mail</button>
+      <button class="m-tab" onclick="mTab('insc','clic',this)">⚡ En 1 clic</button>
+    </div>
+
+    <div id="insc-tel" class="method-pane active">
+      <div class="steps">
+        <div class="step"><div class="step-n">1</div><div class="step-body-text"><div class="step-label">Accéder au site officiel</div><div class="step-detail">Rendez-vous sur <strong>1xBet</strong> et cliquez sur <strong>« Inscription »</strong>. <a href="https://1xbet.com/fr" target="_blank" style="color:#F6A92C">Aller sur 1xBet →</a></div></div></div>
+        <div class="step"><div class="step-n">2</div><div class="step-body-text"><div class="step-label">Choisir « Par numéro de téléphone »</div><div class="step-detail">Sélectionnez cet onglet — c'est la méthode la plus rapide et la plus simple.</div></div></div>
+        <div class="step"><div class="step-n">3</div><div class="step-body-text"><div class="step-label">Entrez votre numéro et votre devise</div><div class="step-detail">Numéro avec indicatif (+226, +229, +225…) et sélectionnez votre <strong>devise locale</strong>.</div></div></div>
+        <div class="step"><div class="step-n">4</div><div class="step-body-text"><div class="step-label">Entrez le code promo exclusif</div><div class="step-detail">Saisissez le code de votre agent dans le champ <strong>« Code promo »</strong> pour activer le bonus maximum.</div><div class="step-code"><span class="promo-display-insc" id="p-insc">DRH26</span><button class="btn-copy-sm" onclick="copyPromo()">📋 Copier</button></div></div></div>
+        <div class="step"><div class="step-n">5</div><div class="step-body-text"><div class="step-label">Valider avec le code SMS</div><div class="step-detail">Cliquez sur <strong>« Envoyer SMS »</strong>, puis entrez le code reçu sur votre téléphone.</div></div></div>
+        <div class="step"><div class="step-n">6</div><div class="step-body-text"><div class="step-label">Contactez votre agent</div><div class="step-detail">Envoyez un message à l'agent pour effectuer votre premier dépôt et activer votre bonus. <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" class="page-wa-link" style="color:#00C896">💬 Contacter l'agent →</a></div></div></div>
+      </div>
+    </div>
+    <div id="insc-email" class="method-pane">
+      <div class="steps">
+        <div class="step"><div class="step-n">1</div><div class="step-body-text"><div class="step-label">Accéder au site</div><div class="step-detail"><a href="https://1xbet.com/fr" target="_blank" style="color:#F6A92C">1xbet.com</a> → cliquez sur <strong>Inscription</strong>.</div></div></div>
+        <div class="step"><div class="step-n">2</div><div class="step-body-text"><div class="step-label">Sélectionner « Par e-mail »</div><div class="step-detail">Cliquez sur l'onglet <strong>« Par e-mail »</strong>.</div></div></div>
+        <div class="step"><div class="step-n">3</div><div class="step-body-text"><div class="step-label">Remplir le formulaire</div><div class="step-detail">Renseignez votre pays, votre devise, votre nom, votre e-mail, votre téléphone et votre mot de passe.</div></div></div>
+        <div class="step"><div class="step-n">4</div><div class="step-body-text"><div class="step-label">Entrez le code promo</div><div class="step-detail">Saisissez le code de votre agent dans le champ prévu.</div><div class="step-code"><span id="p-insc2">DRH26</span><button class="btn-copy-sm" onclick="copyPromo()">📋 Copier</button></div></div></div>
+        <div class="step"><div class="step-n">5</div><div class="step-body-text"><div class="step-label">Confirmer l'e-mail</div><div class="step-detail">Cliquez sur le lien de confirmation envoyé par 1xBet.</div></div></div>
+        <div class="step"><div class="step-n">6</div><div class="step-body-text"><div class="step-label">Pièce d'identité</div><div class="step-detail">Uploadez votre <strong>carte nationale ou votre passeport</strong> pour pouvoir retirer vos gains.</div></div></div>
+        <div class="step"><div class="step-n">7</div><div class="step-body-text"><div class="step-label">Contacter l'agent</div><div class="step-detail">Premier dépôt + activation du bonus. <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" class="page-wa-link" style="color:#00C896">💬 Contacter l'agent →</a></div></div></div>
+      </div>
+    </div>
+    <div id="insc-clic" class="method-pane">
+      <div class="steps">
+        <div class="step"><div class="step-n">1</div><div class="step-body-text"><div class="step-label">Accéder au site</div><div class="step-detail"><a href="https://1xbet.com/fr" target="_blank" style="color:#F6A92C">1xbet.com</a> → cliquez sur <strong>Inscription</strong>.</div></div></div>
+        <div class="step"><div class="step-n">2</div><div class="step-body-text"><div class="step-label">Choisir « En un clic »</div><div class="step-detail">Sélectionnez votre <strong>pays</strong> et votre <strong>devise</strong>.</div></div></div>
+        <div class="step"><div class="step-n">3</div><div class="step-body-text"><div class="step-label">Compte créé en 30 secondes</div><div class="step-detail">Un numéro et un mot de passe sont générés automatiquement. <strong>Notez-les immédiatement !</strong></div></div></div>
+        <div class="step"><div class="step-n">4</div><div class="step-body-text"><div class="step-label">Compléter votre profil</div><div class="step-detail">Une pièce d'identité est requise pour effectuer des retraits.</div></div></div>
+        <div class="step"><div class="step-n">5</div><div class="step-body-text"><div class="step-label">Contacter l'agent</div><div class="step-detail">Premier dépôt + bonus. <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" class="page-wa-link" style="color:#00C896">💬 Contacter l'agent →</a></div></div></div>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,77,109,0.08);border:1px solid rgba(255,77,109,0.2);border-radius:11px;padding:14px;margin-top:8px;">
+      <strong style="font-size:0.82rem;color:#FF4D6D;">⚠️ Vérification d'identité obligatoire</strong>
+      <p style="font-size:0.78rem;color:#9496B8;margin-top:4px;line-height:1.6;">Pour retirer vos gains, 1xBet exige votre <strong style="color:#EEF0FF">carte nationale ou passeport</strong>. Uploadez-la dès l'inscription pour éviter tout blocage lors d'un retrait.</p>
+    </div>
+
+    <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap;">
+      <a href="https://1xbet.com/fr" target="_blank" class="btn-gold">➡️ S'inscrire sur 1xBet</a>
+      <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" id="insc-wa" class="btn-wa">💬 Aide WhatsApp</a>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE DÉPÔT
+══════════════════════════════════════ -->
+<div id="page-depot" class="page-panel">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button class="page-back" onclick="showPage('home')">← Retour à l'accueil</button>
+      <div class="s-tag">💳 DÉPÔT</div>
+      <div class="page-title">Recharger votre compte<br><em>via l'agent officiel</em></div>
+      <p class="page-desc">Rechargez votre compte 1xBet rapidement et en toute sécurité via votre agent. Instantané, sans frais cachés, disponible 7j/7.</p>
+      <div class="page-stats">
+        <div class="pstat"><span class="pstat-val">⚡</span><span class="pstat-lbl">Instantané</span></div>
+        <div class="pstat"><span class="pstat-val">0%</span><span class="pstat-lbl">Sans frais</span></div>
+        <div class="pstat"><span class="pstat-val">🔒</span><span class="pstat-lbl">Sécurisé</span></div>
+        <div class="pstat"><span class="pstat-val">7/7</span><span class="pstat-lbl">Disponible</span></div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="s-tag">📋 PROCÉDURE</div>
+    <div class="s-title" style="margin-bottom:24px;">Étapes du dépôt</div>
+    <div class="steps">
+      <div class="step"><div class="step-n">1</div><div class="step-body-text"><div class="step-label">Connectez-vous sur 1xBet</div><div class="step-detail">Sur <a href="https://1xbet.com/fr" target="_blank" style="color:#F6A92C">1xbet.com</a> ou sur l'application mobile.</div></div></div>
+      <div class="step"><div class="step-n">2</div><div class="step-body-text"><div class="step-label">Récupérez votre numéro de compte</div><div class="step-detail">Il est affiché en haut à droite de votre profil une fois connecté.</div></div></div>
+      <div class="step"><div class="step-n">3</div><div class="step-body-text"><div class="step-label">Remplissez le formulaire ci-dessous</div><div class="step-detail">Entrez vos informations — votre commande sera envoyée directement à l'agent sur WhatsApp.</div></div></div>
+      <div class="step"><div class="step-n">4</div><div class="step-body-text"><div class="step-label">Effectuez le paiement</div><div class="step-detail">Via <strong>MobCash</strong> ou tout autre mode disponible dans votre zone.</div></div></div>
+      <div class="step"><div class="step-n">5</div><div class="step-body-text"><div class="step-label">Compte rechargé ✅</div><div class="step-detail">Votre solde est crédité <strong>immédiatement</strong>. Vous pouvez parier !</div></div></div>
+    </div>
+
+    <!-- FORMULAIRE DÉPÔT -->
+    <div class="order-form" id="depot-form">
+      <div class="of-header">
+        <div class="of-icon">💳</div>
+        <div>
+          <div class="of-title">Envoyer ma commande de <span>dépôt</span></div>
+        </div>
+      </div>
+      <p class="of-sub">Remplissez ce formulaire — votre commande sera envoyée automatiquement à l'agent sur WhatsApp. Réponse en moins de 2 minutes.</p>
+      <div class="of-grid">
+        <div class="of-field">
+          <label class="of-label">👤 Prénom et nom</label>
+          <input type="text" class="of-input" id="dep-nom" placeholder="Ex : Moussa Koné">
+        </div>
+        <div class="of-field">
+          <label class="of-label">📱 Votre numéro WhatsApp</label>
+          <input type="tel" class="of-input" id="dep-tel" placeholder="Ex : +22670000000">
+        </div>
+        <div class="of-field">
+          <label class="of-label">🔢 ID de votre compte 1xBet</label>
+          <input type="text" class="of-input" id="dep-id" placeholder="Ex : 123456789">
+        </div>
+        <div class="of-field">
+          <label class="of-label">💰 Montant à déposer</label>
+          <input type="text" class="of-input" id="dep-montant" placeholder="Ex : 5 000 XOF">
+        </div>
+        <div class="of-field full">
+          <label class="of-label">📲 Méthode de paiement</label>
+          <select class="of-input of-select" id="dep-methode">
+            <option value="">-- Choisissez votre méthode --</option>
+            <option>Orange Money</option>
+            <option>MTN Mobile Money</option>
+            <option>Moov Money</option>
+            <option>Wave</option>
+            <option>MobCash</option>
+            <option>Cash (en main)</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-send-wa" onclick="sendOrder('depot')">💬 Envoyer ma commande sur WhatsApp</button>
+      <p class="of-note">En cliquant, WhatsApp s'ouvre avec votre commande pré-remplie. L'agent la reçoit et vous répond immédiatement.</p>
+      <div class="of-success" id="dep-success">
+        <div class="of-success-icon">✅</div>
+        <div class="of-success-text">Commande envoyée ! L'agent va vous répondre sous 2 minutes.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE RETRAIT
+══════════════════════════════════════ -->
+<div id="page-retrait" class="page-panel">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button class="page-back" onclick="showPage('home')">← Retour à l'accueil</button>
+      <div class="s-tag">💰 RETRAIT</div>
+      <div class="page-title">Retirer vos gains<br><em>en 5 minutes</em></div>
+      <p class="page-desc">Retirez vos gains facilement et rapidement via votre agent officiel. Directement sur votre Mobile Money ou en espèces.</p>
+      <div class="page-stats">
+        <div class="pstat"><span class="pstat-val">⚡</span><span class="pstat-lbl">Rapide</span></div>
+        <div class="pstat"><span class="pstat-val">🔒</span><span class="pstat-lbl">Sécurisé</span></div>
+        <div class="pstat"><span class="pstat-val">🤝</span><span class="pstat-lbl">Accompagné</span></div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="s-tag">📋 PROCÉDURE</div>
+    <div class="s-title" style="margin-bottom:24px;">Étapes du retrait</div>
+    <div class="steps">
+      <div class="step"><div class="step-n">1</div><div class="step-body-text"><div class="step-label">Vérifiez votre solde</div><div class="step-detail">Sur <a href="https://1xbet.com/fr" target="_blank" style="color:#F6A92C">1xbet.com</a> — assurez-vous que le solde est <strong>disponible</strong> (pas un solde bonus).</div></div></div>
+      <div class="step"><div class="step-n">2</div><div class="step-body-text"><div class="step-label">Vérifiez votre compte</div><div class="step-detail">Un compte <strong>vérifié</strong> est obligatoire. Si ce n'est pas le cas, contactez l'agent pour débloquer rapidement.</div></div></div>
+      <div class="step"><div class="step-n">3</div><div class="step-body-text"><div class="step-label">Remplissez le formulaire ci-dessous</div><div class="step-detail">Entrez vos informations — votre demande de retrait sera envoyée directement à l'agent sur WhatsApp.</div></div></div>
+      <div class="step"><div class="step-n">4</div><div class="step-body-text"><div class="step-label">L'agent traite le retrait</div><div class="step-detail">Les fonds sont transférés sur votre <strong>Mobile Money</strong> ou en espèces (Orange, MTN, Wave, cash…).</div></div></div>
+      <div class="step"><div class="step-n">5</div><div class="step-body-text"><div class="step-label">Confirmation reçue 🎉</div><div class="step-detail">Vous recevez une notification. Vos gains sont sur votre compte. <strong>Félicitations !</strong></div></div></div>
+    </div>
+
+    <!-- FORMULAIRE RETRAIT -->
+    <div class="order-form" id="retrait-form">
+      <div class="of-header">
+        <div class="of-icon">💰</div>
+        <div>
+          <div class="of-title">Envoyer ma demande de <span>retrait</span></div>
+        </div>
+      </div>
+      <p class="of-sub">Remplissez ce formulaire — votre demande sera envoyée automatiquement à l'agent sur WhatsApp. Traitement en moins de 5 minutes.</p>
+      <div class="of-grid">
+        <div class="of-field">
+          <label class="of-label">👤 Prénom et nom</label>
+          <input type="text" class="of-input" id="ret-nom" placeholder="Ex : Aminata Diallo">
+        </div>
+        <div class="of-field">
+          <label class="of-label">📱 Votre numéro WhatsApp</label>
+          <input type="tel" class="of-input" id="ret-tel" placeholder="Ex : +22960000000">
+        </div>
+        <div class="of-field">
+          <label class="of-label">🔢 ID de votre compte 1xBet</label>
+          <input type="text" class="of-input" id="ret-id" placeholder="Ex : 987654321">
+        </div>
+        <div class="of-field">
+          <label class="of-label">💰 Montant à retirer</label>
+          <input type="text" class="of-input" id="ret-montant" placeholder="Ex : 45 000 XOF">
+        </div>
+        <div class="of-field">
+          <label class="of-label">📲 Numéro de réception Mobile Money</label>
+          <input type="tel" class="of-input" id="ret-mobile" placeholder="Ex : +22670000000">
+        </div>
+        <div class="of-field">
+          <label class="of-label">💳 Méthode de retrait</label>
+          <select class="of-input of-select" id="ret-methode">
+            <option value="">-- Choisissez votre méthode --</option>
+            <option>Orange Money</option>
+            <option>MTN Mobile Money</option>
+            <option>Moov Money</option>
+            <option>Wave</option>
+            <option>Cash (en main)</option>
+            <option>Autre</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-send-wa" onclick="sendOrder('retrait')">💬 Envoyer ma demande sur WhatsApp</button>
+      <p class="of-note">En cliquant, WhatsApp s'ouvre avec votre demande pré-remplie. L'agent la reçoit et traite votre retrait en moins de 5 minutes.</p>
+      <div class="of-success" id="ret-success">
+        <div class="of-success-icon">✅</div>
+        <div class="of-success-text">Demande envoyée ! L'agent traite votre retrait sous 5 minutes.</div>
+      </div>
+    </div>
+
+    <div style="background:rgba(255,77,109,0.07);border:1px solid rgba(255,77,109,0.18);border-radius:11px;padding:14px;margin-top:16px;">
+      <strong style="font-size:0.82rem;color:#FF4D6D;">⚠️ Conditions requises</strong>
+      <p style="font-size:0.78rem;color:#9496B8;margin-top:5px;line-height:1.65;">Compte <strong style="color:#EEF0FF">vérifié</strong> obligatoire · Au moins un pari effectué · Montant minimum selon la méthode choisie · Contactez l'agent en cas de blocage.</p>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     PAGE BONUS
+══════════════════════════════════════ -->
+<div id="page-bonus" class="page-panel">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <button class="page-back" onclick="showPage('home')">← Retour à l'accueil</button>
+      <div class="s-tag">🎁 BONUS</div>
+      <div class="page-title">Activer votre<br><em>Bonus de bienvenue</em></div>
+      <p class="page-desc">Profitez des meilleures offres exclusives réservées aux clients de votre agent. Activez votre bonus dès l'inscription.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div style="text-align:center;margin-bottom:28px;">
+      <div style="font-size:0.72rem;font-weight:700;letter-spacing:1.5px;color:#9496B8;text-transform:uppercase;margin-bottom:8px;">🎁 Votre code promo exclusif</div>
+      <div style="display:inline-flex;align-items:center;gap:14px;background:rgba(246,169,44,0.1);border:1.5px dashed rgba(246,169,44,0.35);border-radius:14px;padding:16px 28px;">
+        <span style="font-family:'Fraunces',serif;font-size:2.4rem;font-weight:900;color:#F6A92C;letter-spacing:4px;" id="bonus-promo">DRH26</span>
+        <button class="btn-copy-sm" style="font-size:0.8rem;padding:9px 16px;" onclick="copyPromo()">📋 Copier le code</button>
+      </div>
+      <div style="font-size:0.78rem;color:#9496B8;margin-top:8px;">À entrer lors de l'inscription sur 1xBet</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:32px;">
+      <div class="bonus-card"><div class="bc-top"><div class="bc-icon">🏆</div><div class="bc-title">Bonus Paris Sportifs</div></div><div class="bc-desc">Supplément de <strong>200%</strong> sur votre premier dépôt sportif avec le code promo de l'agent.</div></div>
+      <div class="bonus-card"><div class="bc-top"><div class="bc-icon">🎰</div><div class="bc-title">Bonus Casino</div></div><div class="bc-desc">Sur vos <strong>4 premiers dépôts</strong> : jusqu'à 1 500€ + 150 tours gratuits.</div></div>
+      <div class="bonus-card"><div class="bc-top"><div class="bc-icon">🔥</div><div class="bc-title">Offres Spéciales</div></div><div class="bc-desc">Votre agent vous prévient <strong>en premier</strong> des promotions exclusives 1xBet.</div></div>
+    </div>
+
+    <div class="s-tag">📋 COMMENT ACTIVER</div>
+    <div class="s-title" style="margin-bottom:20px;font-size:1.4rem;">Étapes d'activation</div>
+    <div class="steps">
+      <div class="step"><div class="step-n">1</div><div class="step-body-text"><div class="step-label">S'inscrire via le lien officiel</div><div class="step-detail">Créez votre compte sur 1xBet. <a href="https://1xbet.com/fr" target="_blank" style="color:#F6A92C">S'inscrire →</a></div></div></div>
+      <div class="step"><div class="step-n">2</div><div class="step-body-text"><div class="step-label">Entrer le code promo</div><div class="step-detail">Champ <strong>« Code promo »</strong> lors de l'inscription. Code : <strong style="color:#F6A92C" id="bonus-promo2">DRH26</strong></div></div></div>
+      <div class="step"><div class="step-n">3</div><div class="step-body-text"><div class="step-label">Recharger via l'agent</div><div class="step-detail">Le bonus s'active <strong>automatiquement</strong> après votre premier dépôt. <a href="#" onclick="showPage('depot')" style="color:#00C896">Faire un dépôt →</a></div></div></div>
+      <div class="step"><div class="step-n">4</div><div class="step-body-text"><div class="step-label">Bonus activé 🎉</div><div class="step-detail">Crédité sur votre compte. <strong>Pariez et gagnez !</strong></div></div></div>
+    </div>
+
+    <div style="background:rgba(0,200,150,0.07);border:1px solid rgba(0,200,150,0.2);border-radius:11px;padding:14px;margin-top:8px;">
+      <strong style="font-size:0.82rem;color:#00C896;">💡 Conseil de votre agent</strong>
+      <p style="font-size:0.78rem;color:#9496B8;margin-top:4px;line-height:1.6;">Restez en contact WhatsApp pour être informé en <strong style="color:#EEF0FF">premier</strong> des nouvelles promotions exclusives et augmenter vos gains.</p>
+    </div>
+
+    <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap;">
+      <a href="https://1xbet.com/fr" target="_blank" class="btn-gold">➡️ S'inscrire avec le bonus</a>
+      <a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" id="bonus-wa" class="btn-wa">💬 Contacter l'agent</a>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fl">1xBet Guide — Fila Rolf</div>
+  <div class="fd">Agent officiel 1xBet indépendant · Code promo : <strong id="footer-promo">DRH26</strong><br>Site géré par un agent officiel indépendant. Les paris en ligne peuvent présenter des risques. Jouez de façon responsable. +18 uniquement.</div>
+</footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/79108754783?text=Bonjour%20Fila%20Rolf%2C%20je%20veux%20m%27inscrire%20sur%201xBet%20avec%20le%20code%20promo%20DRH26" id="fab-wa" class="fab-wa" title="Contacter l'agent">💬</a>
+
+<!-- ADMIN FAB -->
+<button class="admin-fab" onclick="openAdmin()" title="Admin">⚙️</button>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅ Copié !</div>
+
+<!-- ADMIN MODAL -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <button class="mclose" onclick="closeAdmin()">✕</button>
+    <div class="mtitle">⚙️ <span>Admin</span></div>
+    <div class="msub">Configurez votre page — mot de passe : <strong>agent2026</strong></div>
+
+    <div id="pw-block">
+      <div class="mfield">
+        <label>🔐 Mot de passe</label>
+        <input type="password" id="pw-in" placeholder="Mot de passe admin" onkeydown="if(event.key==='Enter')checkPw()">
+        <div id="pw-err">❌ Mot de passe incorrect</div>
+      </div>
+      <button class="msave" onclick="checkPw()">Accéder →</button>
+    </div>
+
+    <div id="admin-block" style="display:none">
+      <div class="m-tabs2">
+        <button class="m-tab2 active" onclick="aTab('agent',this)">👤 Agent</button>
+        <button class="m-tab2" onclick="aTab('avis',this)">💬 Avis</button>
+        <button class="m-tab2" onclick="aTab('stats',this)">📊 Stats</button>
+      </div>
+
+      <div class="mp active" id="mp-agent">
+        <div class="mfield"><label>👤 Nom</label><input type="text" id="f-name" placeholder="Fila Rolf"></div>
+        <div class="mfield"><label>📱 WhatsApp (avec indicatif)</label><input type="text" id="f-wa" placeholder="+22670000000"></div>
+        <div class="mfield"><label>🎁 Code promo</label><input type="text" id="f-promo" placeholder="DRH26"></div>
+        <div class="mfield"><label>💬 Message WhatsApp auto</label><input type="text" id="f-wamsg" placeholder="Bonjour, je veux m'inscrire sur 1xBet"></div>
+        <button class="msave" onclick="saveConfig()">💾 Enregistrer</button>
+      </div>
+
+      <div class="mp" id="mp-avis">
+        <p style="font-size:0.78rem;color:#9496B8;margin-bottom:14px;">Ajoutez un avis client vérifié :</p>
+        <div class="mfield"><label>👤 Prénom client</label><input type="text" id="av-name" placeholder="Moussa K."></div>
+        <div class="mfield"><label>🌍 Pays + drapeau</label><input type="text" id="av-country" placeholder="Burkina Faso 🇧🇫"></div>
+        <div class="mfield"><label>💬 Son avis</label><textarea id="av-text" placeholder="J'ai retiré en 5 minutes, agent très sérieux..."></textarea></div>
+        <div class="mfield"><label>💰 Son gain (optionnel)</label><input type="text" id="av-gain" placeholder="Retiré 45 000 XOF"></div>
+        <div class="mfield"><label>📅 Date</label><input type="text" id="av-date" placeholder="Mars 2026"></div>
+        <div class="mfield"><label>🎨 Couleur avatar</label>
+          <select id="av-color"><option value="av-gold">Or</option><option value="av-green">Vert</option><option value="av-blue">Bleu</option></select>
+        </div>
+        <button class="msave" style="background:linear-gradient(135deg,#00C896,#009B72);color:#000;" onclick="addAvis()">✅ Ajouter cet avis</button>
+      </div>
+
+      <div class="mp" id="mp-stats">
+        <div class="mfield"><label>👥 Nombre de clients affichés</label><input type="number" id="f-clients" placeholder="247"></div>
+        <button class="msave" onclick="saveConfig()">💾 Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const PW = "agent2026";
+const SK = "fila_rolf_v2";
+
+let cfg = {
+  name: "Fila Rolf",
+  wa: "79108754783",
+  promo: "DRH26",
+  wamsg: "Bonjour, je veux m'inscrire sur 1xBet avec le code promo DRH26",
+  clients: 247,
+  avis: [
+    {name:"Moussa K.",country:"Burkina Faso 🇧🇫",text:"J'avais peur au début mais l'agent m'a tout expliqué avant que je dépose. Retrait en 4 minutes chrono. Je recommande à tous mes amis.",gain:"Retiré 85 000 XOF",date:"Février 2026",color:"av-gold"},
+    {name:"Aminata D.",country:"Bénin 🇧🇯",text:"Ce qui m'a convaincu, c'est qu'il m'a montré exactement comment ça marche avant que je paie. Très transparent. Agent sérieux.",gain:"Retiré 42 000 XOF",date:"Janvier 2026",color:"av-green"},
+    {name:"Karim B.",country:"Maroc 🇲🇦",text:"Je cherchais un agent fiable depuis longtemps. Celui-ci répond toujours rapidement et explique tout clairement. Aucune mauvaise surprise.",gain:"Retiré 1 800 MAD",date:"Mars 2026",color:"av-blue"},
+    {name:"Fatou S.",country:"Guinée 🇬🇳",text:"Première fois que je parie en ligne. L'agent m'a guidé étape par étape. Très patient et professionnel. Je me sens en sécurité.",gain:"Retiré 65 000 GNF",date:"Février 2026",color:"av-gold"},
+    {name:"Omar T.",country:"Algérie 🇩🇿",text:"Retrait rapide, pas de complications. L'agent envoie toujours une confirmation écrite. C'est rassurant de voir les preuves à chaque fois.",gain:"Retiré 18 500 DZD",date:"Mars 2026",color:"av-green"},
+    {name:"Seydou A.",country:"Burkina Faso 🇧🇫",text:"J'ai d'abord testé avec 2 000 XOF. Retrait en 3 minutes. Depuis je suis client régulier. L'agent est toujours disponible, même le soir.",gain:"Retiré 120 000 XOF",date:"Mars 2026",color:"av-gold"},
+    {name:"Laïla M.",country:"Maroc 🇲🇦",text:"Le guide sur la page m'a vraiment aidée à comprendre avant de me lancer. Je savais exactement ce qui allait se passer. Merci !",gain:"Retiré 2 200 MAD",date:"Janvier 2026",color:"av-blue"},
+    {name:"Kofi A.",country:"Botswana 🇧🇼",text:"Fast agent, always responds quickly. My withdrawal was done in under 5 minutes. Very professional service, I will recommend to friends.",gain:"Withdrew 850 BWP",date:"Mars 2026",color:"av-green"},
+    {name:"Ibrahim N.",country:"Éthiopie 🇪🇹",text:"The agent helped me set up my account and explained everything clearly. The withdrawal to Telebirr was very fast. Excellent service.",gain:"Withdrew 3 500 ETB",date:"Février 2026",color:"av-gold"},
+    {name:"Chantal K.",country:"Bénin 🇧🇯",text:"Au début j'hésitais beaucoup. Mais l'agent m'a expliqué comment marche le retrait et m'a montré des preuves. Maintenant je fais confiance.",gain:"Retiré 30 000 XOF",date:"Mars 2026",color:"av-blue"},
+  ]
+};
+try {const s=localStorage.getItem(SK);if(s)cfg={...cfg,...JSON.parse(s)};} catch(e){}
+
+function getWaLink(msg) {
+  const n = cfg.wa.replace(/\D/g,'') || '79108754783';
+  const txt = encodeURIComponent(msg || cfg.wamsg);
+  return `https://wa.me/${n}?text=${txt}`;
+}
+
+function applyAll() {
+  // Promo
+  ['promo-display','p-insc','p-insc2','bonus-promo','bonus-promo2','footer-promo'].forEach(id=>{
+    const e=document.getElementById(id);if(e)e.textContent=cfg.promo;
+  });
+  // Name
+  const nd=document.getElementById('agent-name-display');if(nd)nd.textContent=cfg.name;
+  // Clients
+  const hc=document.getElementById('h-clients');if(hc)hc.textContent=cfg.clients;
+  const rc=document.getElementById('rs-count');if(rc)rc.textContent=`sur ${cfg.clients} avis`;
+  // WA links
+  const waUrl=getWaLink();
+  ['nav-wa','hero-wa','agent-wa-btn','fab-wa','cta-wa','insc-wa','bonus-wa'].forEach(id=>{
+    const e=document.getElementById(id);if(e)e.href=waUrl;
+  });
+  document.querySelectorAll('.page-wa-link').forEach(el=>el.href=waUrl);
+  // Title
+  document.title = `Guide 1xBet — ${cfg.name}, Agent Officiel`;
+  // Ticker
+  buildTicker();
+  // Commentaires
+  renderAvis();
+}
+
+// TICKER
+function buildTicker() {
+  const items = [
+    `Code promo exclusif : ${cfg.promo}`,
+    "Inscription 1xBet en 5 minutes",
+    "Retrait rapide",
+    "Recharge instantanée via l'agent",
+    "Bonus de bienvenue disponible",
+    `Agent ${cfg.name} disponible 7j/7`,
+    "Aucune commission cachée",
+    
+  ];
+  const ti = document.getElementById('ticker-inner');
+  const all = [...items,...items];
+  ti.innerHTML = all.map(t=>`<div class="tick-item"><div class="tick-dot"></div>${t}</div>`).join('');
+}
+
+// COMMENTAIRES
+function renderAvis() {
+  function card(a) {
+    return `<div class="comment-card">
+      <div class="cc-top">
+        <div class="cc-avatar ${a.color||'av-gold'}">${(a.name||'?')[0].toUpperCase()}</div>
+        <div><div class="cc-name">${a.name}</div><div class="cc-country">${a.country}</div></div>
+      </div>
+      <div class="cc-stars">★★★★★</div>
+      <div class="cc-text">"${a.text}"</div>
+      <div>
+        ${a.gain?`<span class="cc-gain">💰 ${a.gain}</span>`:''}
+        <span class="cc-verified">✅ Vérifié</span>
+      </div>
+      <div class="cc-date">${a.date||''}</div>
+    </div>`;
+  }
+  const half = Math.ceil(cfg.avis.length/2);
+  const row1 = cfg.avis.slice(0,half);
+  const row2 = cfg.avis.slice(half);
+  const t1=document.getElementById('cticker1');
+  const t2=document.getElementById('cticker2');
+  t1.innerHTML=[...row1,...row1,...row1].map(card).join('');
+  t2.innerHTML=[...row2,...row2,...row2].map(card).join('');
+}
+
+// PAGES
+function showPage(id) {
+  document.querySelectorAll('.page-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// METHOD TABS
+function mTab(page, id, btn) {
+  document.querySelectorAll(`#page-${page} .method-pane`).forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll(`#page-${page} .m-tab`).forEach(b=>b.classList.remove('active'));
+  const pane = document.getElementById(`${page.substring(0,4)}-${id}`);
+  if(pane) pane.classList.add('active');
+  if(btn) btn.classList.add('active');
+}
+
+// FORMULAIRE COMMANDE WHATSAPP
+function sendOrder(type) {
+  let nom,tel,id,montant,methode,mobile='',msg;
+  if(type==='depot') {
+    nom=document.getElementById('dep-nom').value.trim();
+    tel=document.getElementById('dep-tel').value.trim();
+    id=document.getElementById('dep-id').value.trim();
+    montant=document.getElementById('dep-montant').value.trim();
+    methode=document.getElementById('dep-methode').value;
+    if(!nom||!tel||!id||!montant||!methode){showToast('⚠️ Veuillez remplir tous les champs');return;}
+    msg=`💳 *COMMANDE DE DÉPÔT*\n\n👤 Nom : ${nom}\n📱 Téléphone : ${tel}\n🔢 ID Compte 1xBet : ${id}\n💰 Montant : ${montant}\n📲 Méthode : ${methode}\n\n📌 Page : Guide 1xBet — ${cfg.name}`;
+  } else {
+    nom=document.getElementById('ret-nom').value.trim();
+    tel=document.getElementById('ret-tel').value.trim();
+    id=document.getElementById('ret-id').value.trim();
+    montant=document.getElementById('ret-montant').value.trim();
+    mobile=document.getElementById('ret-mobile').value.trim();
+    methode=document.getElementById('ret-methode').value;
+    if(!nom||!tel||!id||!montant||!methode){showToast('⚠️ Veuillez remplir tous les champs');return;}
+    msg=`💰 *DEMANDE DE RETRAIT*\n\n👤 Nom : ${nom}\n📱 Téléphone : ${tel}\n🔢 ID Compte 1xBet : ${id}\n💰 Montant : ${montant}\n📲 Mobile Money : ${mobile}\n💳 Méthode : ${methode}\n\n📌 Page : Guide 1xBet — ${cfg.name}`;
+  }
+  const waLink=getWaLink(msg);
+  const smsLink=`sms:+79108754783?body=${encodeURIComponent(msg)}`;
+  // Essaie WA, sinon SMS
+  window.open(waLink,'_blank');
+  const suc=document.getElementById(type==='depot'?'dep-success':'ret-success');
+  if(suc) suc.style.display='block';
+  showToast('✅ WhatsApp ouvert !');
+}
+
+// COPY PROMO
+function copyPromo() {
+  navigator.clipboard.writeText(cfg.promo).then(()=>showToast('✅ Code '+cfg.promo+' copié !'));
+}
+
+// ADMIN
+function openAdmin(){document.getElementById('overlay').classList.add('open');}
+function closeAdmin(){document.getElementById('overlay').classList.remove('open');}
+document.getElementById('overlay').addEventListener('click',function(e){if(e.target===this)closeAdmin();});
+document.getElementById('pw-in').addEventListener('keydown',e=>{if(e.key==='Enter')checkPw();});
+
+function checkPw(){
+  if(document.getElementById('pw-in').value===PW){
+    document.getElementById('pw-block').style.display='none';
+    document.getElementById('admin-block').style.display='block';
+    document.getElementById('f-name').value=cfg.name;
+    document.getElementById('f-wa').value=cfg.wa;
+    document.getElementById('f-promo').value=cfg.promo;
+    document.getElementById('f-wamsg').value=cfg.wamsg;
+    document.getElementById('f-clients').value=cfg.clients;
+  } else {document.getElementById('pw-err').style.display='block';}
+}
+
+function aTab(id,btn){
+  document.querySelectorAll('.mp').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.m-tab2').forEach(b=>b.classList.remove('active'));
+  document.getElementById('mp-'+id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function saveConfig(){
+  cfg.name=document.getElementById('f-name').value||cfg.name;
+  cfg.wa=document.getElementById('f-wa').value;
+  cfg.promo=(document.getElementById('f-promo').value||cfg.promo).toUpperCase();
+  cfg.wamsg=document.getElementById('f-wamsg').value||cfg.wamsg;
+  cfg.clients=parseInt(document.getElementById('f-clients').value)||cfg.clients;
+  save();applyAll();closeAdmin();showToast('✅ Configuration enregistrée !');
+}
+
+function addAvis(){
+  const name=document.getElementById('av-name').value.trim();
+  const text=document.getElementById('av-text').value.trim();
+  if(!name||!text){showToast('⚠️ Prénom et avis requis');return;}
+  cfg.avis.unshift({
+    name,text,
+    country:document.getElementById('av-country').value||'—',
+    gain:document.getElementById('av-gain').value||'',
+    date:document.getElementById('av-date').value||'',
+    color:document.getElementById('av-color').value||'av-gold'
+  });
+  ['av-name','av-country','av-text','av-gain','av-date'].forEach(id=>document.getElementById(id).value='');
+  save();renderAvis();closeAdmin();showToast('✅ Avis ajouté avec succès !');
+}
+
+function save(){try{localStorage.setItem(SK,JSON.stringify(cfg));}catch(e){}}
+
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2600);
+}
+
+applyAll();
+</script>
+</div><!-- /app-wrapper -->
+</body>
+</html>
