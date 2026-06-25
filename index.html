@@ -8,9 +8,8 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-height:100vh;}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;}
 
-/* BLOCKED */
 #blocked-screen{display:none;position:fixed;inset:0;background:#b00000;color:#fff;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;z-index:9999;}
 #blocked-screen .lock{font-size:4rem;margin-bottom:1rem;}
 #blocked-screen h2{font-size:1.5rem;margin-bottom:.5rem;}
@@ -18,26 +17,26 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-h
 
 /* TICKER */
 .ticker{background:linear-gradient(90deg,#b00000,#d32f2f);overflow:hidden;padding:.4rem 0;white-space:nowrap;}
-.ticker-track{display:inline-block;animation:tick 35s linear infinite;font-size:.78rem;font-weight:600;color:#fff;letter-spacing:.02em;}
+.ticker-track{display:inline-block;animation:tick 35s linear infinite;font-size:.78rem;font-weight:600;color:#fff;}
 .ticker-track span{margin-right:3rem;}
 @keyframes tick{0%{transform:translateX(100vw);}100%{transform:translateX(-100%);}}
 
 /* TOPBAR */
 .topbar{background:#fff;border-bottom:3px solid #d32f2f;padding:0 1rem;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.08);}
-.topbar-logo{font-size:1.2rem;font-weight:900;color:#222;text-decoration:none;display:flex;align-items:center;gap:.4rem;}
+.topbar-logo{font-size:1.15rem;font-weight:900;color:#222;text-decoration:none;display:flex;align-items:center;gap:.4rem;}
 .topbar-logo .red{color:#d32f2f;}
 .topbar-right{display:flex;gap:.5rem;}
-.btn-login{background:#fff;color:#222;border:1.5px solid #ddd;padding:.4rem 1rem;border-radius:6px;font-weight:600;font-size:.8rem;text-decoration:none;cursor:pointer;}
-.btn-signup{background:#d32f2f;color:#fff;border:none;padding:.4rem 1.1rem;border-radius:6px;font-weight:700;font-size:.8rem;text-decoration:none;cursor:pointer;}
+.btn-login{background:#fff;color:#222;border:1.5px solid #ddd;padding:.4rem .9rem;border-radius:6px;font-weight:600;font-size:.78rem;text-decoration:none;}
+.btn-signup{background:#d32f2f;color:#fff;border:none;padding:.4rem 1rem;border-radius:6px;font-weight:700;font-size:.78rem;text-decoration:none;}
 
 /* NAV TABS */
-.navtabs{background:#fff;display:flex;overflow-x:auto;border-bottom:2px solid #f0f2f5;-webkit-overflow-scrolling:touch;}
+.navtabs{background:#fff;display:flex;overflow-x:auto;border-bottom:2px solid #f0f2f5;-webkit-overflow-scrolling:touch;position:sticky;top:56px;z-index:99;}
 .navtabs::-webkit-scrollbar{display:none;}
-.navtab{padding:.75rem 1.1rem;color:#888;font-size:.82rem;font-weight:700;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s;display:flex;align-items:center;gap:.35rem;flex-shrink:0;}
+.navtab{padding:.7rem 1rem;color:#888;font-size:.8rem;font-weight:700;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s;flex-shrink:0;}
 .navtab:hover{color:#d32f2f;}
 .navtab.active{color:#d32f2f;border-bottom-color:#d32f2f;}
 
-/* AGENT HERO */
+/* HERO */
 .hero{background:linear-gradient(160deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:2rem 1rem 1.75rem;text-align:center;}
 .agent-avatar-wrap{margin-bottom:.75rem;}
 .agent-avatar{width:88px;height:88px;border-radius:50%;border:3px solid #d32f2f;object-fit:cover;display:block;margin:0 auto;background:#1a1a2e;}
@@ -45,17 +44,19 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-h
 .agent-badge{display:inline-flex;align-items:center;gap:.35rem;background:rgba(211,47,47,.15);border:1px solid rgba(211,47,47,.4);color:#ff6b6b;font-size:.68rem;font-weight:700;padding:.2rem .7rem;border-radius:20px;margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.06em;}
 .agent-name{font-size:1.15rem;font-weight:900;color:#fff;margin-bottom:.1rem;}
 .agent-country{font-size:.78rem;color:#8899aa;margin-bottom:1rem;}
-
-/* PROMO */
 .promo-block{display:inline-flex;align-items:center;gap:.75rem;background:rgba(0,0,0,.3);border:2px dashed rgba(211,47,47,.6);border-radius:10px;padding:.55rem 1.25rem;margin-bottom:1.25rem;}
 .promo-lbl{font-size:.68rem;color:#8899aa;margin-bottom:.1rem;}
 .promo-val{font-size:1.35rem;font-weight:900;color:#ff6b6b;letter-spacing:.15em;}
-.btn-copy{background:#d32f2f;color:#fff;border:none;padding:.35rem .9rem;border-radius:6px;font-size:.72rem;font-weight:700;cursor:pointer;white-space:nowrap;}
-
+.btn-copy{background:#d32f2f;color:#fff;border:none;padding:.35rem .9rem;border-radius:6px;font-size:.72rem;font-weight:700;cursor:pointer;}
 .hero-btns{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;}
 .btn-wa{background:#25d366;color:#000;border:none;padding:.6rem 1.1rem;border-radius:8px;font-weight:700;font-size:.82rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.35rem;}
 .btn-red{background:#d32f2f;color:#fff;border:none;padding:.6rem 1.1rem;border-radius:8px;font-weight:700;font-size:.82rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.35rem;}
 .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.2);padding:.6rem 1.1rem;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.35rem;}
+
+/* TRUST BAR */
+.trust-bar{background:#fff;border-bottom:1px solid #eee;padding:.75rem 1rem;overflow-x:auto;white-space:nowrap;text-align:center;}
+.trust-bar span{display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;font-weight:600;color:#555;margin:0 1rem;}
+.trust-bar span b{color:#d32f2f;}
 
 /* STATS */
 .statsbar{background:#fff;border-bottom:1px solid #e8e8e8;display:flex;justify-content:center;}
@@ -63,6 +64,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-h
 .stat:last-child{border-right:none;}
 .stat strong{display:block;font-size:1.3rem;font-weight:900;color:#d32f2f;}
 .stat span{font-size:.7rem;color:#999;}
+
+/* PAYMENT LOGOS */
+.payment-bar{background:#f8f8f8;border-bottom:1px solid #eee;padding:.65rem 1rem;text-align:center;}
+.payment-bar span{display:inline-block;background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:.3rem .75rem;font-size:.75rem;font-weight:700;color:#444;margin:.2rem .25rem;}
 
 /* CONTENT */
 .content{max-width:960px;margin:0 auto;padding:1.25rem 1rem 3rem;}
@@ -77,12 +82,21 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-h
 @media(max-width:640px){.grid2{grid-template-columns:1fr;}}
 
 /* QUICK CARD */
-.qcard{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:1.25rem;cursor:pointer;transition:border-color .2s,box-shadow .2s;text-decoration:none;display:block;}
+.qcard{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:1.25rem;cursor:pointer;transition:border-color .2s,box-shadow .2s;}
 .qcard:hover{border-color:#d32f2f;box-shadow:0 4px 16px rgba(211,47,47,.12);}
 .qcard-icon{font-size:1.6rem;margin-bottom:.6rem;}
 .qcard h3{font-size:.92rem;font-weight:800;color:#222;margin-bottom:.25rem;}
 .qcard p{font-size:.78rem;color:#888;line-height:1.5;}
 .qcard-arrow{color:#d32f2f;font-size:.78rem;font-weight:700;margin-top:.6rem;display:block;}
+
+/* HOW IT WORKS */
+.how-steps{display:flex;gap:0;flex-wrap:wrap;}
+.how-step{flex:1;min-width:140px;text-align:center;padding:1.25rem .75rem;position:relative;}
+.how-step:not(:last-child)::after{content:'→';position:absolute;right:-8px;top:50%;transform:translateY(-50%);color:#ddd;font-size:1.2rem;}
+@media(max-width:500px){.how-step:not(:last-child)::after{display:none;}}
+.how-num{width:44px;height:44px;border-radius:50%;background:#d32f2f;color:#fff;font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto .6rem;}
+.how-step h4{font-size:.82rem;font-weight:700;margin-bottom:.2rem;}
+.how-step p{font-size:.75rem;color:#888;}
 
 /* STEPS */
 .steps{list-style:none;}
@@ -102,10 +116,28 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-h
 
 /* INNER TABS */
 .itabs{display:flex;gap:.35rem;margin-bottom:1.1rem;flex-wrap:wrap;}
-.itab{padding:.35rem .9rem;border-radius:20px;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid #e0e0e0;background:#fff;color:#888;transition:all .15s;}
+.itab{padding:.35rem .9rem;border-radius:20px;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid #e0e0e0;background:#fff;color:#888;}
 .itab.active{background:#d32f2f;color:#fff;border-color:#d32f2f;}
 .ipanel{display:none;}
 .ipanel.active{display:block;}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:1.5rem;}
+.testi-card{background:#fafafa;border:1px solid #f0f0f0;border-radius:12px;padding:1.1rem;}
+.testi-top{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem;}
+.testi-avatar{width:38px;height:38px;border-radius:50%;background:#d32f2f;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0;}
+.testi-name{font-size:.85rem;font-weight:700;}
+.testi-country{font-size:.72rem;color:#999;}
+.testi-stars{color:#f59e0b;font-size:.85rem;margin-bottom:.4rem;}
+.testi-text{font-size:.8rem;color:#555;line-height:1.6;font-style:italic;}
+
+/* REVIEW FORM */
+.review-form{background:#f8f8f8;border:1px solid #e8e8e8;border-radius:12px;padding:1.25rem;}
+.review-form h4{font-size:.9rem;font-weight:800;margin-bottom:1rem;color:#222;}
+.star-select{display:flex;gap:.3rem;margin-bottom:1rem;}
+.star-btn{font-size:1.4rem;cursor:pointer;color:#ddd;background:none;border:none;transition:color .1s;}
+.star-btn.active,.star-btn:hover{color:#f59e0b;}
+.review-success{display:none;background:#e8f5e9;color:#2e7d32;border:1px solid #a5d6a7;border-radius:8px;padding:.7rem 1rem;font-size:.82rem;font-weight:600;margin-top:.7rem;}
 
 /* GUARANTEE */
 .gitem{display:flex;gap:.75rem;align-items:flex-start;padding:.85rem;background:#fafafa;border-radius:10px;margin-bottom:.6rem;border:1px solid #f0f0f0;}
@@ -121,10 +153,6 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-h
 /* BONUS */
 .bcard{border-radius:10px;padding:1.1rem 1.25rem;color:#fff;margin-bottom:.75rem;}
 
-/* WARN */
-.warn{background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:.8rem 1rem;font-size:.8rem;color:#856404;margin-top:.9rem;}
-.danger{background:#fff3f3;border:1px solid #ffcdd2;border-radius:8px;padding:.8rem 1rem;font-size:.8rem;color:#b71c1c;margin-top:.9rem;}
-
 /* CTA */
 .ctaband{background:linear-gradient(135deg,#b00000,#d32f2f);border-radius:12px;padding:2rem 1.5rem;text-align:center;color:#fff;margin-top:1rem;}
 .ctaband h2{font-size:1.4rem;font-weight:900;margin-bottom:.5rem;}
@@ -132,16 +160,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f2f5;color:#222;min-h
 .ctabtns{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;}
 .btn-white{background:#fff;color:#d32f2f;border:none;padding:.65rem 1.25rem;border-radius:8px;font-weight:700;font-size:.85rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.35rem;}
 
-/* FOOTER */
-footer{background:#1a1a2e;color:#556;padding:1.25rem 1rem;text-align:center;font-size:.74rem;line-height:1.9;margin-top:0;}
+footer{background:#1a1a2e;color:#556;padding:1.25rem 1rem;text-align:center;font-size:.74rem;line-height:1.9;}
 footer strong{color:#d32f2f;}
-
-/* FLOAT WA */
 .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:50;background:#25d366;color:#000;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4);}
 
-
-
-/* TOAST */
 .toast{position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:.5rem 1.25rem;border-radius:20px;font-size:.8rem;font-weight:700;opacity:0;transition:opacity .3s;pointer-events:none;z-index:500;}
 .toast.show{opacity:1;}
 </style>
@@ -156,19 +178,17 @@ footer strong{color:#d32f2f;}
 
 <div id="main-content" style="display:none">
 
-<!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track">
-    <span>🎁 Code promo exclusif — Bonus de bienvenue jusqu'à 200%</span>
+    <span>🎁 Code promo exclusif — Bonus jusqu'à 200%</span>
     <span>⚡ Retrait en moins de 5 minutes via Mobile Money</span>
     <span>✅ Agent officiel 1xBet — Disponible 7j/7</span>
-    <span>🏆 Plus de 50 sports — Football, Basketball, Tennis et plus</span>
-    <span>📱 Orange Money · MTN · Moov · Wave — Dépôt et retrait instantanés</span>
+    <span>🏆 Plus de 50 sports — Football, Basketball, Tennis</span>
+    <span>📱 Orange Money · MTN · Moov · Wave — Instantané</span>
     <span>🔒 0% de commission — Votre argent sécurisé</span>
   </div>
 </div>
 
-<!-- TOPBAR -->
 <div class="topbar">
   <a class="topbar-logo" href="#">🎯 Guide <span class="red">1xBet</span></a>
   <div class="topbar-right">
@@ -177,17 +197,16 @@ footer strong{color:#d32f2f;}
   </div>
 </div>
 
-<!-- NAV TABS -->
 <div class="navtabs" id="navtabs">
   <div class="navtab active" onclick="showPanel('accueil',this)">🏠 Accueil</div>
   <div class="navtab" onclick="showPanel('inscription',this)">📝 Inscription</div>
   <div class="navtab" onclick="showPanel('depot',this)">💳 Dépôt</div>
   <div class="navtab" onclick="showPanel('retrait',this)">💰 Retrait</div>
   <div class="navtab" onclick="showPanel('bonus',this)">🎁 Bonus</div>
+  <div class="navtab" onclick="showPanel('avis',this)">⭐ Avis</div>
   <div class="navtab" onclick="showPanel('garanties',this)">🛡️ Garanties</div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
   <div class="agent-avatar-wrap" id="agent-avatar-wrap"></div>
   <div class="agent-badge">✅ Agent officiel 1xBet vérifié</div>
@@ -207,42 +226,61 @@ footer strong{color:#d32f2f;}
   </div>
 </div>
 
-<!-- STATS -->
+<div class="trust-bar">
+  <span>✅ <b>Agent vérifié</b></span>
+  <span>⚡ Retrait <b>5 min</b></span>
+  <span>🔒 <b>100%</b> sécurisé</span>
+  <span>📞 Dispo <b>7j/7</b></span>
+  <span>💸 <b>0%</b> commission</span>
+</div>
+
 <div class="statsbar">
-  <div class="stat"><strong id="stat-clients">—</strong><span>Clients actifs</span></div>
+  <div class="stat"><strong id="stat-clients">500+</strong><span>Clients actifs</span></div>
   <div class="stat"><strong>5 min</strong><span>Retrait</span></div>
   <div class="stat"><strong>7j/7</strong><span>Disponible</span></div>
   <div class="stat"><strong>0%</strong><span>Commission</span></div>
 </div>
 
-<!-- PANELS -->
+<div class="payment-bar">
+  <span>🟠 Orange Money</span>
+  <span>🟡 MTN MoMo</span>
+  <span>🔵 Moov Money</span>
+  <span>🌊 Wave</span>
+  <span>💵 Cash</span>
+</div>
+
 <div class="content">
 
   <!-- ACCUEIL -->
   <div class="panel active" id="panel-accueil">
+    <div class="card">
+      <div class="card-title">⚡ Comment ça marche ?</div>
+      <div class="how-steps">
+        <div class="how-step"><div class="how-num">1</div><h4>Inscription</h4><p>Créez votre compte 1xBet avec le code promo</p></div>
+        <div class="how-step"><div class="how-num">2</div><h4>Dépôt</h4><p>Contactez l'agent pour recharger votre compte</p></div>
+        <div class="how-step"><div class="how-num">3</div><h4>Pariez</h4><p>Pariez sur vos sports préférés</p></div>
+        <div class="how-step"><div class="how-num">4</div><h4>Retrait</h4><p>Recevez vos gains en 5 min sur Mobile Money</p></div>
+      </div>
+    </div>
     <div class="grid4" style="margin-bottom:1rem;">
       <div class="qcard" onclick="showPanel('inscription',document.querySelectorAll('.navtab')[1])">
-        <div class="qcard-icon">📝</div>
-        <h3>Inscription</h3>
-        <p>Créez votre compte 1xBet en 5 minutes avec le code promo exclusif.</p>
+        <div class="qcard-icon">📝</div><h3>Inscription</h3>
+        <p>Créez votre compte 1xBet en 5 minutes.</p>
         <span class="qcard-arrow">Guide →</span>
       </div>
       <div class="qcard" onclick="showPanel('depot',document.querySelectorAll('.navtab')[2])">
-        <div class="qcard-icon">💳</div>
-        <h3>Dépôt</h3>
-        <p>Rechargez votre compte via l'agent. Instantané, sans frais cachés.</p>
+        <div class="qcard-icon">💳</div><h3>Dépôt</h3>
+        <p>Rechargez votre compte instantanément.</p>
         <span class="qcard-arrow">Guide →</span>
       </div>
       <div class="qcard" onclick="showPanel('retrait',document.querySelectorAll('.navtab')[3])">
-        <div class="qcard-icon">💰</div>
-        <h3>Retrait</h3>
-        <p>Retirez vos gains sur Mobile Money en moins de 5 minutes.</p>
+        <div class="qcard-icon">💰</div><h3>Retrait</h3>
+        <p>Retirez vos gains en moins de 5 minutes.</p>
         <span class="qcard-arrow">Guide →</span>
       </div>
       <div class="qcard" onclick="showPanel('bonus',document.querySelectorAll('.navtab')[4])">
-        <div class="qcard-icon">🎁</div>
-        <h3>Bonus</h3>
-        <p>Activez votre bonus de bienvenue avec le code promo exclusif.</p>
+        <div class="qcard-icon">🎁</div><h3>Bonus</h3>
+        <p>Activez votre bonus de bienvenue.</p>
         <span class="qcard-arrow">Guide →</span>
       </div>
     </div>
@@ -279,7 +317,7 @@ footer strong{color:#d32f2f;}
       <div id="insc-tel" class="ipanel active">
         <ol class="steps">
           <li class="step"><div class="stepn">1</div><div><h4>Accéder au site officiel</h4><p>Rendez-vous sur <a href="https://1xbet.com/fr" target="_blank">1xbet.com</a> et cliquez sur <strong>« Inscription »</strong>.</p></div></li>
-          <li class="step"><div class="stepn">2</div><div><h4>Choisir « Par numéro de téléphone »</h4><p>La méthode la plus rapide et la plus simple.</p></div></li>
+          <li class="step"><div class="stepn">2</div><div><h4>Choisir « Par numéro de téléphone »</h4><p>La méthode la plus rapide.</p></div></li>
           <li class="step"><div class="stepn">3</div><div><h4>Entrez votre numéro et votre devise</h4><p>Numéro avec indicatif (+226, +229, +225…) et votre devise locale.</p></div></li>
           <li class="step"><div class="stepn">4</div><div><h4>Entrez le code promo</h4><p>Saisissez <strong id="step-promo-1">—</strong> dans le champ « Code promo ».</p></div></li>
           <li class="step"><div class="stepn">5</div><div><h4>Valider avec le code SMS</h4><p>Entrez le code reçu sur votre téléphone.</p></div></li>
@@ -293,7 +331,6 @@ footer strong{color:#d32f2f;}
           <li class="step"><div class="stepn">3</div><div><h4>Remplir le formulaire</h4><p>Pays, devise, nom, e-mail, téléphone et mot de passe.</p></div></li>
           <li class="step"><div class="stepn">4</div><div><h4>Entrez le code promo</h4><p>Saisissez <strong id="step-promo-2">—</strong> dans le champ prévu.</p></div></li>
           <li class="step"><div class="stepn">5</div><div><h4>Confirmer l'e-mail</h4><p>Cliquez sur le lien de confirmation envoyé par 1xBet.</p></div></li>
-          <li class="step"><div class="stepn">6</div><div><h4>Pièce d'identité</h4><p>Uploadez votre carte nationale ou passeport pour les retraits.</p></div></li>
         </ol>
       </div>
       <div id="insc-clic" class="ipanel">
@@ -301,8 +338,7 @@ footer strong{color:#d32f2f;}
           <li class="step"><div class="stepn">1</div><div><h4>Accéder au site</h4><p><a href="https://1xbet.com/fr" target="_blank">1xbet.com</a> → cliquez sur Inscription.</p></div></li>
           <li class="step"><div class="stepn">2</div><div><h4>Choisir « En un clic »</h4><p>Sélectionnez votre pays et votre devise.</p></div></li>
           <li class="step"><div class="stepn">3</div><div><h4>Compte créé en 30 secondes</h4><p>Un numéro et mot de passe sont générés. <strong>Notez-les immédiatement !</strong></p></div></li>
-          <li class="step"><div class="stepn">4</div><div><h4>Compléter votre profil</h4><p>Pièce d'identité requise pour les retraits.</p></div></li>
-          <li class="step"><div class="stepn">5</div><div><h4>Contactez votre agent</h4><p>Premier dépôt et activation du bonus.</p></div></li>
+          <li class="step"><div class="stepn">4</div><div><h4>Contactez votre agent</h4><p>Premier dépôt et activation du bonus.</p></div></li>
         </ol>
       </div>
       <div style="margin-top:1.1rem;display:flex;gap:.6rem;flex-wrap:wrap;">
@@ -352,12 +388,10 @@ footer strong{color:#d32f2f;}
         <div class="card-title">💰 Étapes du retrait</div>
         <ol class="steps">
           <li class="step"><div class="stepn">1</div><div><h4>Vérifiez votre solde</h4><p>Assurez-vous que le solde est disponible (pas un solde bonus).</p></div></li>
-          <li class="step"><div class="stepn">2</div><div><h4>Vérifiez votre compte</h4><p>Un compte vérifié est obligatoire.</p></div></li>
-          <li class="step"><div class="stepn">3</div><div><h4>Remplissez le formulaire</h4><p>Votre demande est envoyée à l'agent.</p></div></li>
-          <li class="step"><div class="stepn">4</div><div><h4>L'agent traite le retrait</h4><p>Fonds transférés sur Mobile Money ou en espèces.</p></div></li>
-          <li class="step"><div class="stepn">5</div><div><h4>Confirmation reçue 🎉</h4><p>Vos gains sont disponibles !</p></div></li>
+          <li class="step"><div class="stepn">2</div><div><h4>Remplissez le formulaire</h4><p>Votre demande est envoyée à l'agent.</p></div></li>
+          <li class="step"><div class="stepn">3</div><div><h4>L'agent traite le retrait</h4><p>Fonds transférés sur Mobile Money ou en espèces.</p></div></li>
+          <li class="step"><div class="stepn">4</div><div><h4>Confirmation reçue 🎉</h4><p>Vos gains sont disponibles !</p></div></li>
         </ol>
-
       </div>
       <div class="card">
         <div class="card-title">📤 Envoyer ma demande</div>
@@ -384,19 +418,69 @@ footer strong{color:#d32f2f;}
   <div class="panel" id="panel-bonus">
     <div class="card">
       <div class="card-title">🎁 Votre bonus de bienvenue</div>
-      <div class="bcard" style="background:linear-gradient(135deg,#b00000,#d32f2f)"><h4 style="font-size:1rem;font-weight:800;margin-bottom:.3rem;">🏆 Bonus Paris Sportifs</h4><p style="font-size:.82rem;opacity:.85;">Supplément de 200% sur votre premier dépôt sportif avec le code promo de l'agent.</p></div>
+      <div class="bcard" style="background:linear-gradient(135deg,#b00000,#d32f2f)"><h4 style="font-size:1rem;font-weight:800;margin-bottom:.3rem;">🏆 Bonus Paris Sportifs</h4><p style="font-size:.82rem;opacity:.85;">200% sur votre premier dépôt sportif avec le code promo de l'agent.</p></div>
       <div class="bcard" style="background:linear-gradient(135deg,#4a0080,#7b1fa2)"><h4 style="font-size:1rem;font-weight:800;margin-bottom:.3rem;">🎰 Bonus Casino</h4><p style="font-size:.82rem;opacity:.85;">Sur vos 4 premiers dépôts : jusqu'à 1 500€ + 150 tours gratuits.</p></div>
-      <div class="bcard" style="background:linear-gradient(135deg,#e65100,#f57c00)"><h4 style="font-size:1rem;font-weight:800;margin-bottom:.3rem;">🔥 Offres Spéciales</h4><p style="font-size:.82rem;opacity:.85;">Votre agent vous prévient en premier des promotions exclusives 1xBet.</p></div>
-      <div class="card-title" style="margin-top:1.1rem;">Comment activer le bonus</div>
+      <div class="bcard" style="background:linear-gradient(135deg,#e65100,#f57c00)"><h4 style="font-size:1rem;font-weight:800;margin-bottom:.3rem;">🔥 Offres Spéciales</h4><p style="font-size:.82rem;opacity:.85;">Votre agent vous prévient en premier des promotions exclusives.</p></div>
+      <div class="card-title" style="margin-top:1.1rem;">Comment activer</div>
       <ol class="steps">
         <li class="step"><div class="stepn">1</div><div><h4>S'inscrire</h4><p><a href="https://1xbet.com/fr" target="_blank">1xbet.com</a></p></div></li>
         <li class="step"><div class="stepn">2</div><div><h4>Entrer le code promo</h4><p>Code : <strong id="bonus-promo">—</strong></p></div></li>
-        <li class="step"><div class="stepn">3</div><div><h4>Recharger via l'agent</h4><p>Le bonus s'active automatiquement après votre premier dépôt.</p></div></li>
-        <li class="step"><div class="stepn">4</div><div><h4>Bonus activé 🎉</h4><p>Crédité sur votre compte. Pariez et gagnez !</p></div></li>
+        <li class="step"><div class="stepn">3</div><div><h4>Recharger via l'agent</h4><p>Le bonus s'active après votre premier dépôt.</p></div></li>
+        <li class="step"><div class="stepn">4</div><div><h4>Bonus activé 🎉</h4><p>Pariez et gagnez !</p></div></li>
       </ol>
       <div style="margin-top:1.1rem;display:flex;gap:.6rem;flex-wrap:wrap;">
         <a class="btn-red" href="https://1xbet.com/fr" target="_blank">➡️ S'inscrire avec le bonus</a>
         <a class="btn-wa" id="bonus-wa" href="#" target="_blank">💬 Contacter l'agent</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVIS -->
+  <div class="panel" id="panel-avis">
+    <div class="card">
+      <div class="card-title">⭐ Ce que disent nos clients</div>
+      <div class="testi-grid" id="testi-list">
+        <div class="testi-card">
+          <div class="testi-top"><div class="testi-avatar">K</div><div><div class="testi-name">Kofi A.</div><div class="testi-country">🇬🇭 Ghana</div></div></div>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">« Retrait reçu en 3 minutes ! L'agent est très réactif et professionnel. Je recommande vivement. »</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-top"><div class="testi-avatar" style="background:#1a56db">M</div><div><div class="testi-name">Moussa D.</div><div class="testi-country">🇸🇳 Sénégal</div></div></div>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">« Dépôt instantané, zéro problème. L'agent répond même tard le soir. Très satisfait du service. »</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-top"><div class="testi-avatar" style="background:#25a244">A</div><div><div class="testi-name">Aminata S.</div><div class="testi-country">🇨🇮 Côte d'Ivoire</div></div></div>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">« Première fois que j'utilise 1xBet. L'agent m'a guidée étape par étape. Très bon service ! »</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-top"><div class="testi-avatar" style="background:#b45309">I</div><div><div class="testi-name">Ibrahim T.</div><div class="testi-country">🇧🇫 Burkina Faso</div></div></div>
+          <div class="testi-stars">★★★★☆</div>
+          <div class="testi-text">« Service rapide et fiable. Le code promo a bien fonctionné, j'ai eu mon bonus dès l'inscription. »</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">✍️ Laisser votre avis</div>
+      <div class="review-form">
+        <h4>Partagez votre expérience</h4>
+        <div class="fg"><label>👤 Votre prénom</label><input type="text" id="rev-nom" placeholder="Ex: Moussa"></div>
+        <div class="fg"><label>🌍 Votre pays</label><input type="text" id="rev-pays" placeholder="Ex: Sénégal"></div>
+        <div class="fg">
+          <label>⭐ Note</label>
+          <div class="star-select" id="stars">
+            <button class="star-btn" onclick="setStar(1)">★</button>
+            <button class="star-btn" onclick="setStar(2)">★</button>
+            <button class="star-btn" onclick="setStar(3)">★</button>
+            <button class="star-btn" onclick="setStar(4)">★</button>
+            <button class="star-btn" onclick="setStar(5)">★</button>
+          </div>
+        </div>
+        <div class="fg"><label>💬 Votre avis</label><input type="text" id="rev-text" placeholder="Décrivez votre expérience..."></div>
+        <button class="btn-wa" style="width:100%;justify-content:center;" onclick="sendReview()">💬 Envoyer mon avis sur WhatsApp</button>
+        <div class="review-success" id="rev-success">✅ Merci pour votre avis ! Il a été transmis à l'agent.</div>
       </div>
     </div>
   </div>
@@ -414,7 +498,7 @@ footer strong{color:#d32f2f;}
     </div>
   </div>
 
-</div><!-- content -->
+</div>
 
 <footer>
   Agent officiel 1xBet indépendant · Code promo : <strong id="footer-promo">—</strong><br>
@@ -422,32 +506,11 @@ footer strong{color:#d32f2f;}
 </footer>
 
 <a class="wa-float" id="float-wa" href="#" target="_blank">💬</a>
-</div><!-- main-content -->
-
-    <div id="apanel-content" style="display:none;">
-      <div class="atabs">
-        <div class="atab active" onclick="switchAtab('agents',this)">👥 Agents</div>
-        <div class="atab" onclick="switchAtab('settings',this)">🔧 Réglages</div>
-      </div>
-      <div class="asec active" id="asec-agents"><div id="agents-list"></div></div>
-      <div class="asec" id="asec-settings">
-        <div class="aform">
-          <input type="password" id="new-pwd1" placeholder="Nouveau mot de passe">
-          <input type="password" id="new-pwd2" placeholder="Confirmer">
-          <button class="btn-red" style="width:100%;justify-content:center;" onclick="changePwd()">💾 Enregistrer</button>
-          <div id="pwd-msg" style="font-size:.78rem;margin-top:.4rem;display:none;"></div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
 <script>
-// ═══════════════════════════════════════
-//  TES AGENTS — modifie directement ici
-// ═══════════════════════════════════════
 function getAgents(){
   return [
     {ref:'elena',nom:'Elena',pays:'Russie',phone:'+79108754783',promo:'RUS76',photo:'',clients:0,actif:true},
@@ -455,20 +518,22 @@ function getAgents(){
   ];
 }
 
-// PANELS
+var currentRating=0;
+function setStar(n){
+  currentRating=n;
+  document.querySelectorAll('.star-btn').forEach(function(b,i){b.classList.toggle('active',i<n);});
+}
+
 function showPanel(id,btn){
   document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active');});
   document.getElementById('panel-'+id).classList.add('active');
   document.querySelectorAll('.navtab').forEach(function(t){t.classList.remove('active');});
   if(btn) btn.classList.add('active');
-  var topbar=document.querySelector('.topbar');
-  var offset=topbar ? topbar.offsetHeight : 56;
-  var navtabs=document.getElementById('navtabs');
-  var navTop=navtabs ? navtabs.getBoundingClientRect().top+window.pageYOffset : 0;
-  window.scrollTo({top:navTop-offset,behavior:'smooth'});
+  var topbarH=document.querySelector('.topbar') ? document.querySelector('.topbar').offsetHeight : 56;
+  var navH=document.getElementById('navtabs') ? document.getElementById('navtabs').offsetHeight : 44;
+  window.scrollTo({top:topbarH+navH,behavior:'smooth'});
 }
 
-// INNER TABS
 function switchI(g,id,btn){
   document.querySelectorAll('[id^="'+g+'-"]').forEach(function(el){el.classList.remove('active');});
   document.getElementById(g+'-'+id).classList.add('active');
@@ -476,7 +541,6 @@ function switchI(g,id,btn){
   btn.classList.add('active');
 }
 
-// ACCESS
 var currentAgent=null;
 function init(){
   var ref=new URLSearchParams(window.location.search).get('ref');
@@ -493,33 +557,41 @@ function applyAgent(a){
   ['hero-wa','insc-wa','bonus-wa','cta-wa','float-wa'].forEach(function(id){var el=document.getElementById(id);if(el)el.href=waUrl;});
   var tel=document.getElementById('hero-tel');if(tel)tel.href='tel:'+a.phone;
   ['display-promo','step-promo-1','step-promo-2','bonus-promo','footer-promo'].forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=a.promo;});
-  var sc=document.getElementById('stat-clients');if(sc)sc.textContent=a.clients||'—';
+  var sc=document.getElementById('stat-clients');if(sc&&a.clients)sc.textContent=a.clients+'+';
   var n=document.getElementById('agent-name');if(n)n.textContent=a.nom;
   var p=document.getElementById('agent-country');if(p)p.textContent=a.pays||'';
   var w=document.getElementById('agent-avatar-wrap');
   if(w){
-    if(a.photo){w.innerHTML='<img class="agent-avatar" src="'+a.photo+'" alt="'+a.nom+'" onerror="this.outerHTML=\'<div class=agent-initials>'+a.nom.charAt(0)+'</div>\'">';}
+    if(a.photo){w.innerHTML='<img class="agent-avatar" src="'+a.photo+'" alt="'+a.nom+'" onerror="this.outerHTML=\'<div class=\\\"agent-initials\\\">'+a.nom.charAt(0)+'</div>\'">';}
     else{w.innerHTML='<div class="agent-initials">'+a.nom.charAt(0).toUpperCase()+'</div>';}
   }
   document.title='Guide 1xBet — '+a.nom;
 }
 
-// FORMS
 function sendDepot(){
   if(!currentAgent)return;
-  var msg='💳 COMMANDE DÉPÔT\nNom: '+document.getElementById('dep-nom').value+'\nWhatsApp: '+document.getElementById('dep-wa').value+'\nID 1xBet: '+document.getElementById('dep-id').value+'\nMontant: '+document.getElementById('dep-montant').value+'\nMéthode: '+document.getElementById('dep-methode').value;
+  var msg='━━━━━━━━━━━━━━━\n💳 NOUVELLE COMMANDE DÉPÔT\n━━━━━━━━━━━━━━━\n👤 Client : '+document.getElementById('dep-nom').value+'\n📱 WhatsApp : '+document.getElementById('dep-wa').value+'\n🔢 ID 1xBet : '+document.getElementById('dep-id').value+'\n💰 Montant : '+document.getElementById('dep-montant').value+'\n📲 Méthode : '+document.getElementById('dep-methode').value+'\n━━━━━━━━━━━━━━━';
   window.open('https://wa.me/'+currentAgent.phone.replace(/\D/g,'')+'?text='+encodeURIComponent(msg),'_blank');
   document.getElementById('dep-success').style.display='block';
 }
+
 function sendRetrait(){
   if(!currentAgent)return;
-  var msg='💰 DEMANDE RETRAIT\nNom: '+document.getElementById('ret-nom').value+'\nWhatsApp: '+document.getElementById('ret-wa').value+'\nID 1xBet: '+document.getElementById('ret-id').value+'\nMontant: '+document.getElementById('ret-montant').value+'\nNuméro réception: '+document.getElementById('ret-num').value+'\nMéthode: '+document.getElementById('ret-methode').value;
+  var msg='━━━━━━━━━━━━━━━\n💰 NOUVELLE DEMANDE RETRAIT\n━━━━━━━━━━━━━━━\n👤 Client : '+document.getElementById('ret-nom').value+'\n📱 WhatsApp : '+document.getElementById('ret-wa').value+'\n🔢 ID 1xBet : '+document.getElementById('ret-id').value+'\n💰 Montant : '+document.getElementById('ret-montant').value+'\n📲 Réception : '+document.getElementById('ret-num').value+'\n💳 Méthode : '+document.getElementById('ret-methode').value+'\n━━━━━━━━━━━━━━━';
   window.open('https://wa.me/'+currentAgent.phone.replace(/\D/g,'')+'?text='+encodeURIComponent(msg),'_blank');
   document.getElementById('ret-success').style.display='block';
 }
+
+function sendReview(){
+  if(!currentAgent)return;
+  var stars='★'.repeat(currentRating)+'☆'.repeat(5-currentRating);
+  var msg='⭐ NOUVEL AVIS CLIENT\n👤 '+document.getElementById('rev-nom').value+' ('+document.getElementById('rev-pays').value+')\n'+stars+'\n💬 '+document.getElementById('rev-text').value;
+  window.open('https://wa.me/'+currentAgent.phone.replace(/\D/g,'')+'?text='+encodeURIComponent(msg),'_blank');
+  document.getElementById('rev-success').style.display='block';
+}
+
 function copyPromo(){if(!currentAgent)return;navigator.clipboard.writeText(currentAgent.promo).then(function(){showToast('Code copié ! ✅');});}
 function showToast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2500);}
-
 
 init();
 </script>
