@@ -139,33 +139,7 @@ footer strong{color:#d32f2f;}
 /* FLOAT WA */
 .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;z-index:50;background:#25d366;color:#000;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4);}
 
-/* ADMIN */
-#admin-btn{position:fixed;bottom:1.5rem;left:1.5rem;z-index:50;background:#fff;color:#999;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.88rem;cursor:pointer;border:1px solid #e0e0e0;box-shadow:0 2px 8px rgba(0,0,0,.1);}
-.aoverlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.7);align-items:center;justify-content:center;padding:1rem;}
-.aoverlay.open{display:flex;}
-.apanel{background:#fff;border-radius:16px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;padding:1.5rem;}
-.apanel h2{font-size:1rem;margin-bottom:1.25rem;display:flex;align-items:center;justify-content:space-between;}
-.aclose{background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;}
-.atabs{display:flex;gap:.4rem;margin-bottom:1.25rem;}
-.atab{flex:1;padding:.45rem;text-align:center;font-size:.76rem;font-weight:700;cursor:pointer;border:1.5px solid #e0e0e0;border-radius:6px;background:#f8f8f8;color:#888;}
-.atab.active{background:#d32f2f;color:#fff;border-color:#d32f2f;}
-.asec{display:none;}
-.asec.active{display:block;}
-.arow{display:flex;align-items:center;gap:.65rem;padding:.8rem;background:#f8f8f8;border:1px solid #eee;border-radius:8px;margin-bottom:.5rem;}
-.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
-.dot.on{background:#25d366;}
-.dot.off{background:#d32f2f;}
-.arow-info{flex:1;}
-.arow-info strong{font-size:.85rem;display:block;}
-.arow-info span{font-size:.7rem;color:#999;}
-.arow-btns{display:flex;gap:.3rem;}
-.xbtn{padding:.28rem .6rem;border-radius:4px;font-size:.68rem;font-weight:700;cursor:pointer;border:none;}
-.xlink{background:rgba(26,86,219,.1);color:#1a56db;}
-.alogin p{color:#888;font-size:.83rem;margin-bottom:.9rem;}
-.alogin input{width:100%;padding:.6rem;border:1.5px solid #e0e0e0;border-radius:7px;font-size:.88rem;margin-bottom:.7rem;font-family:inherit;}
-.aerr{color:#d32f2f;font-size:.76rem;margin-top:.4rem;display:none;}
-.aform input{width:100%;padding:.55rem .8rem;border:1.5px solid #e0e0e0;border-radius:7px;font-size:.8rem;margin-bottom:.5rem;font-family:inherit;background:#fafafa;}
-.aform input:focus{outline:none;border-color:#d32f2f;}
+
 
 /* TOAST */
 .toast{position:fixed;bottom:5rem;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:.5rem 1.25rem;border-radius:20px;font-size:.8rem;font-weight:700;opacity:0;transition:opacity .3s;pointer-events:none;z-index:500;}
@@ -450,18 +424,6 @@ footer strong{color:#d32f2f;}
 <a class="wa-float" id="float-wa" href="#" target="_blank">💬</a>
 </div><!-- main-content -->
 
-<div id="admin-btn" onclick="openAdmin()">⚙️</div>
-<div class="aoverlay" id="aoverlay">
-  <div class="apanel">
-    <h2>⚙️ Administration <button class="aclose" onclick="closeAdmin()">✕</button></h2>
-    <div id="alogin">
-      <div class="alogin">
-        <p>Accès réservé à l'administrateur</p>
-        <input type="password" id="admin-pwd" placeholder="Mot de passe" onkeydown="if(event.key==='Enter')adminLogin()">
-        <button class="btn-red" style="width:100%;justify-content:center;" onclick="adminLogin()">Accéder →</button>
-        <div class="aerr" id="aerr">Mot de passe incorrect</div>
-      </div>
-    </div>
     <div id="apanel-content" style="display:none;">
       <div class="atabs">
         <div class="atab active" onclick="switchAtab('agents',this)">👥 Agents</div>
@@ -488,7 +450,7 @@ footer strong{color:#d32f2f;}
 // ═══════════════════════════════════════
 function getAgents(){
   return [
-    {ref:'elena',nom:'Elena',pays:'Russie',phone:'+79964411738',promo:'RUS76',photo:'',clients:0,actif:true},
+    {ref:'elena',nom:'Elena',pays:'Russie',phone:'+79108754783',promo:'RUS76',photo:'',clients:0,actif:true},
     {ref:'joseph',nom:'Joseph Henry',pays:'Guinée Conakry',phone:'+226620611648',promo:'JHL224',photo:'https://lh3.googleusercontent.com/d/1z_QWYLS2TxF_BeLAIkyvrHJv8NTgVkj_=w200',clients:0,actif:true},
   ];
 }
@@ -558,41 +520,7 @@ function sendRetrait(){
 function copyPromo(){if(!currentAgent)return;navigator.clipboard.writeText(currentAgent.promo).then(function(){showToast('Code copié ! ✅');});}
 function showToast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2500);}
 
-// ADMIN
-function getAdminPwd(){return localStorage.getItem('1xbet_pwd')||'agent2026';}
-function openAdmin(){document.getElementById('aoverlay').classList.add('open');}
-function closeAdmin(){document.getElementById('aoverlay').classList.remove('open');}
-function adminLogin(){
-  if(document.getElementById('admin-pwd').value===getAdminPwd()){
-    document.getElementById('alogin').style.display='none';
-    document.getElementById('apanel-content').style.display='block';
-    renderAgents();
-  }else{document.getElementById('aerr').style.display='block';}
-}
-function switchAtab(s,btn){
-  document.querySelectorAll('.asec').forEach(function(el){el.classList.remove('active');});
-  document.getElementById('asec-'+s).classList.add('active');
-  document.querySelectorAll('.atab').forEach(function(b){b.classList.remove('active');});
-  btn.classList.add('active');
-  if(s==='agents')renderAgents();
-}
-function renderAgents(){
-  var agents=getAgents();
-  document.getElementById('agents-list').innerHTML=agents.map(function(a){
-    return '<div class="arow"><div class="dot '+(a.actif?'on':'off')+'"></div><div class="arow-info"><strong>'+a.nom+'</strong><span>?ref='+a.ref+' · '+a.promo+'</span></div><div class="arow-btns"><button class="xbtn xlink" onclick="copyLink(\''+a.ref+'\')">🔗 Copier lien</button></div></div>';
-  }).join('');
-}
-function copyLink(ref){
-  var url=window.location.origin+window.location.pathname+'?ref='+ref;
-  navigator.clipboard.writeText(url).then(function(){showToast('Lien copié ! ✅');});
-}
-function changePwd(){
-  var p1=document.getElementById('new-pwd1').value,p2=document.getElementById('new-pwd2').value,msg=document.getElementById('pwd-msg');
-  if(!p1||p1!==p2){msg.textContent='Les mots de passe ne correspondent pas.';msg.style.color='#d32f2f';msg.style.display='block';return;}
-  localStorage.setItem('1xbet_pwd',p1);msg.textContent='✅ Mis à jour !';msg.style.color='#2e7d32';msg.style.display='block';
-  document.getElementById('new-pwd1').value='';document.getElementById('new-pwd2').value='';
-}
-document.getElementById('aoverlay').addEventListener('click',function(e){if(e.target===this)closeAdmin();});
+
 init();
 </script>
 </body>
